@@ -20,3 +20,12 @@ https://www.lni.wa.gov/Safety/Research/Projects/Lead/default.asp
 
 https://fortress.wa.gov/doh/wtn/WTNPortal/
 
+https://wwwn.cdc.gov/Niosh-whc/chart/sensor-pe
+
+https://www.cdc.gov/niosh/topics/surveillance/data.html
+
+https://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS
+
+https://quickstats.nass.usda.gov/
+
+https://www.doleta.gov/naws/pages/public-data/
