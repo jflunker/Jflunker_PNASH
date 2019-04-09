@@ -1,4 +1,4 @@
-# aghealthindicators
+# AG Health Indicators
 
 https://www.cste.org/page/OHIndicators
 
