@@ -6,6 +6,10 @@ WA ESD: https://fortress.wa.gov/esd/employmentdata/reports-publications/industry
 
 SOII: https://www.bls.gov/iif/oshstate.htm
 
+O*NET: https://www.onetonline.org/find/
+
+OIICS: https://wwwn.cdc.gov/wisards/oiics/
+
 ## Static Data Source (pdf reports)
 
 https://lni.wa.gov/safety-health/safety-research/files/2020/80_15_2020_WA_Indicators_2020Jan.pdf (Composite reports; No AFF)
