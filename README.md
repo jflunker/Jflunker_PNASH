@@ -1,8 +1,8 @@
 # Ag Health Indicators
 
-| Region | Agency | Attributes | Notes |
+| Region | Agency | Data | Query tool, data download, report | Notes |
 | --- | --- | --- | --- |
-| WA | Employment Security Department | | | 
+| WA | Employment Security Department | [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report)| Report | 
 | WA | Department of Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | 
 
 
