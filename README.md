@@ -4,7 +4,7 @@ https://www.cste.org/page/OHIndicators (Cannot stratify by AFF)
 
 https://www.who.int/hia/green_economy/indicators_food.pdf (No data; only proposed work)
 
-http://www.health.state.mn.us/divs/hpcd/cdee/occhealth/indicators/aginjury.html
+https://www.health.state.mn.us/communities/occhealth/data/aginjury.html (Similar approach could be used for PNW)
 
 https://deohs.washington.edu/sites/default/files/nwcohs/OSHA_Indicators_Region_X_2009.pdf
 
