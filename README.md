@@ -6,16 +6,10 @@
 | WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | Numerator, Denominator, Rates | Online Query Tool, Data Download |
 | WA | Health | [Temporary Worker Housing](http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp) | Denominator | Online Query Tool |
 | WA | Health | [Comprehensive Hospital Abstract Reporting System (CHARS)](http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS) | Numerator | .csv download | 
-| WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | 
-| US | Bureau of Labor & Statistics | [Quarterly Worforce Indicators (QWI)](https://qwiexplorer.ces.census.gov/static/explore.html) | Denominator | Online Query Tool; 4-digit NAICS; H2A/H2B not included |
+| WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | Numerator | .xls downloads |
+| US | Bureau of Labor Statistics | [Quarterly Worforce Indicators (QWI)](https://qwiexplorer.ces.census.gov/static/explore.html) | Denominator | Online Query Tool; 4-digit NAICS; H2A/H2B not included |
+| US | Agriculture | [National Agricultural Statistics Service](https://quickstats.nass.usda.gov/) | Numerator | Online Query Tool; .csv downloads | 
 
-### OR
-
-### ID
-
-### AK
-
-### Federal
 
 NASS: https://quickstats.nass.usda.gov/ 
 
