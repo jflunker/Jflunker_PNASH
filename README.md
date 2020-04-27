@@ -2,7 +2,7 @@
 
 https://www.cste.org/page/OHIndicators (Cannot stratify by AFF)
 
-https://www.who.int/hia/green_economy/indicators_food.pdf
+https://www.who.int/hia/green_economy/indicators_food.pdf (No data; just proposed work)
 
 http://www.health.state.mn.us/divs/hpcd/cdee/occhealth/indicators/aginjury.html
 
