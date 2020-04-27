@@ -6,7 +6,7 @@ https://www.who.int/hia/green_economy/indicators_food.pdf (No data; only propose
 
 https://www.health.state.mn.us/communities/occhealth/data/aginjury.html (Similar approach could be used for PNW)
 
-https://deohs.washington.edu/sites/default/files/nwcohs/OSHA_Indicators_Region_X_2009.pdf
+https://deohs.washington.edu/sites/default/files/nwcohs/OSHA_Indicators_Region_X_2009.pdf (Ag is small portion of Region 10)
 
 http://www.lni.wa.gov/Safety/Research/Files/WA_Indicators_MarAp17.pdf
 
