@@ -4,11 +4,15 @@
 
 ### WA
 
-https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report
+ESD: https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report
 
-https://fortress.wa.gov/doh/wtn/WTNPortal/
+WTN: https://fortress.wa.gov/doh/wtn/WTNPortal/
 
-http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp
+TWH: http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp
+
+CHARS: http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS 
+
+L&I WC: https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data
 
 ### OR
 
@@ -18,11 +22,21 @@ http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp
 
 ### Federal
 
-SOII: https://www.bls.gov/iif/oshstate.htm
+NASS: https://quickstats.nass.usda.gov/ 
 
 O*NET: https://www.onetonline.org/find/
 
 OIICS: https://wwwn.cdc.gov/wisards/oiics/
+
+Quarterly Workforce Indicator: https://qwiexplorer.ces.census.gov/static/explore.html#x=0&g=0
+
+BLS - SOII: https://www.bls.gov/iif/oshstate.htm
+
+BLS - CPS: https://www.bls.gov/cps/
+
+BLS - Geographic Profiles of Employment and Unemployment: https://www.bls.gov/opub/geographic-profile/
+
+BLS - QCEW: https://www.bls.gov/cew/
 
 ## Static Data Source (e.g. pdf reports)
 
