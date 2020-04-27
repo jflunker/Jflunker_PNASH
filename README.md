@@ -1,6 +1,6 @@
 # Ag Health Indicators
 
-https://www.cste.org/page/OHIndicators
+https://www.cste.org/page/OHIndicators (Cannot stratify by AFF)
 
 https://www.who.int/hia/green_economy/indicators_food.pdf
 
