@@ -26,6 +26,8 @@ OIICS: https://wwwn.cdc.gov/wisards/oiics/
 
 ## Static Data Source (e.g. pdf reports)
 
+https://www.cdc.gov/niosh/agforfish/aginjurysurv.html
+
 https://lni.wa.gov/safety-health/safety-research/files/2020/80_15_2020_WA_Indicators_2020Jan.pdf (Composite reports; No AFF)
 
 https://www.cste.org/page/OHIndicators (No AFF)
@@ -54,4 +56,8 @@ https://www.doleta.gov/naws/pages/public-data/
 
 Other NIOSH or NIEHS surveillance tools?
 
-.
+ACS: https://www.census.gov/programs-surveys/acs
+
+Ag Census: https://steemit.com/education/@somethingburger/importing-usda-census-of-agriculture-data-into-r-1511564625-3931718
+
+https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CDPH%20Document%20Library/AllIndicators11-16.pdf
