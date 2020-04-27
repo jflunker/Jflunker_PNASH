@@ -1,24 +1,13 @@
 # Ag Health Indicators
 
 | Region | Agency | Data | Attributes | Notes |
-| --- | --- | --- | --- | --- |
-| WA | Employment Security Department | [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | PDF Report | Sortable vy 4-digit NAICS |
-| WA | Department of Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | Online Query Tool, Data Download |
+| ------ | ------ | ---- | ---------- | ----- |
+| WA | Employment Security| [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | Denominator | Static PDF Report |
+| WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | Numerator, Denominator, Rates | Online Query Tool, Data Download; 4-digit NAICS; H2A/H2B not included |
+| WA | Health | [Temporary Worker Housing](http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp) | Denominator | Online Query Tool |
+| WA | Health | [Comprehensive Hospital Abstract Reporting System (CHARS)](http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS) | Numerator | .csv download | 
+| WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | 
 
-
-## Dynamic Data Sources (e.g .download tables; online queries)
-
-### WA
-
-ESD: https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report
-
-WTN: https://fortress.wa.gov/doh/wtn/WTNPortal/
-
-TWH: http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp
-
-CHARS: http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS 
-
-L&I WC: https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data
 
 ### OR
 
