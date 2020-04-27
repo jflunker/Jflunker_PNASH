@@ -1,5 +1,11 @@
 # Ag Health Indicators
 
+| Region | Agency | Attributes | Notes |
+| --- | --- | --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
+
 ## Dynamic Data Sources (e.g .download tables; online queries)
 
 ### WA
