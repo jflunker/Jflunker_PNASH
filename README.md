@@ -1,8 +1,17 @@
 # Ag Health Indicators
 
-## Solid Data Source (queries possible)
+## Dynamic Data Sources (e.g .download tables; online queries)
 
-WA ESD: https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report
+### WA
+https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report
+
+### OR
+
+### ID
+
+### AK
+
+### Federal
 
 SOII: https://www.bls.gov/iif/oshstate.htm
 
@@ -10,7 +19,7 @@ O*NET: https://www.onetonline.org/find/
 
 OIICS: https://wwwn.cdc.gov/wisards/oiics/
 
-## Static Data Source (pdf reports)
+## Static Data Source (e.g. pdf reports)
 
 https://lni.wa.gov/safety-health/safety-research/files/2020/80_15_2020_WA_Indicators_2020Jan.pdf (Composite reports; No AFF)
 
