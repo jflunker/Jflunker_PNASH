@@ -4,6 +4,8 @@
 
 ### WA
 https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report
+https://fortress.wa.gov/doh/wtn/WTNPortal/
+http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp
 
 ### OR
 
