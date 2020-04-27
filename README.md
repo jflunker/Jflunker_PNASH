@@ -2,8 +2,8 @@
 
 | Region | Agency | Data | Attributes | Notes |
 | --- | --- | --- | --- | --- |
-| WA | Employment Security Department | [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | PDF Report |
-| WA | Department of Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | Online Query Tool, Data download |
+| WA | Employment Security Department | [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | PDF Report | Sortable vy 4-digit NAICS |
+| WA | Department of Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | Online Query Tool, Data Download |
 
 
 ## Dynamic Data Sources (e.g .download tables; online queries)
