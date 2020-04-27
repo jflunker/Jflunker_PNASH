@@ -8,7 +8,7 @@ https://www.health.state.mn.us/communities/occhealth/data/aginjury.html (Similar
 
 https://deohs.washington.edu/sites/default/files/nwcohs/OSHA_Indicators_Region_X_2009.pdf (Ag is small portion of Region 10)
 
-http://www.lni.wa.gov/Safety/Research/Files/WA_Indicators_MarAp17.pdf
+https://lni.wa.gov/safety-health/safety-research/files/2020/80_15_2020_WA_Indicators_2020Jan.pdf (Composite reports)
 
 https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report
 
