@@ -1,6 +1,14 @@
 # Ag Health Indicators
 
-https://www.cste.org/page/OHIndicators (Cannot stratify by AFF)
+## Solid Data Source (queries possible)
+
+https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report
+
+## Static Data Source (pdf reports)
+
+https://lni.wa.gov/safety-health/safety-research/files/2020/80_15_2020_WA_Indicators_2020Jan.pdf (Composite reports; No AFF)
+
+https://www.cste.org/page/OHIndicators (No AFF)
 
 https://www.who.int/hia/green_economy/indicators_food.pdf (No data; only proposed work)
 
@@ -8,9 +16,7 @@ https://www.health.state.mn.us/communities/occhealth/data/aginjury.html (Similar
 
 https://deohs.washington.edu/sites/default/files/nwcohs/OSHA_Indicators_Region_X_2009.pdf (Ag is small portion of Region 10)
 
-https://lni.wa.gov/safety-health/safety-research/files/2020/80_15_2020_WA_Indicators_2020Jan.pdf (Composite reports)
 
-https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report
 
 https://www.bls.gov/iif/oshstate.htm
 
