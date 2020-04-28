@@ -1,7 +1,7 @@
 # Ag Health Indicators
 
-| Region | Agency | Data | Attributes | Notes |
-| ------ | ------ | ---- | ---------- | ----- |
+| Region | Agency | Data | Attributes | Years | Notes |
+| ------ | ------ | ---- | ---------- | ----- | ----- |
 | US | NIOSH | [Status of National Agriculture Injury Surveys at NIOSH](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html) | Numerator & Denominator | - Compilation of Data Sources as of ~2016 |
 | US | BLS | [Quarterly Worforce Indicators (QWI)](https://qwiexplorer.ces.census.gov/static/explore.html) | Denominator | Online Query Tool; 4-digit NAICS; By State/County; H2A/H2B Not Included |
 | US | BLS | [Quarterly Census of Employment and Wages (QCEW)](https://www.bls.gov/cew/) | Denominator | Data Download |
@@ -11,6 +11,8 @@
 | US | BLS | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/) | Numerator & Denominiator | Data Download; Mental Health Supplement by NIOSH |
 | US | BLS | [Current Population Survey (CPS)](https://www.bls.gov/cps/) | Denominator | Data Download | 
 | US | BLS | [Geographic Profiles of Employment and Unemployement\(https://www.bls.gov/lau/ex14tables.htm) | Denominator | Data Download |
+
+
 | US | USDA | [National Agricultural Statistics Service](https://quickstats.nass.usda.gov/) | Numerator | Online Query Tool; By State/County; .csv Download |
 | WA | Employment Security| [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | Denominator | Static PDF Report |
 | WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | Numerator, Denominator, Rates | Online Query Tool, .csv Download |
