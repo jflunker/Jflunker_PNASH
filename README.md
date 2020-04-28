@@ -2,8 +2,8 @@
 
 ## Denominator Data
 
-| Region | Agency | Data | Attributes | Years | Notes |
-| ------ | ------ | ---- | ---------- | ----- | ----- |
+| Region | Agency | Data | Attributes | Years | Notes | Strengths | Limitations |
+| ------ | ------ | ---- | ---------- | ----- | ----- | --------- | ----------- |
 | US | DOL-BLS | [Quarterly Worforce Indicators (QWI)](https://qwiexplorer.ces.census.gov/static/explore.html) | ? | 2014-present | Online Query Tool; By State/County; H2A/H2B Not Included; Earlier Years Possible; 4-digit NAICS |
 | US | DOL-BLS | [Quarterly Census of Employment and Wages (QCEW)](https://www.bls.gov/cew/downloadable-data-files.htm) | ? | 1990 - present | Data Download; 4-digit NAICS |
 | US | DOL-BLS | [Current Population Survey (CPS)](https://www.bls.gov/cps/) | ? | ? | Data Download | 
