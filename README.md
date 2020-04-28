@@ -55,5 +55,5 @@ activities should promote collaboration among their state-level programs to moni
     - Foster increased coordination and communication between its intramural and extramural surveillance programs.
     - Encourage NIOSH-funded Education Research and Training Centers and Agricultural Health and Safety Centers to provide technical and research support to state surveillance programs in their regions as part of their required outreach and education core activity." - p.123-124
 
-## Excerpts from [*Injury and Illness Surveillance of U.S. Agricultural Workers Assessment of Recommendations and Actions*](https://github.com/eddiekasner/aghealthindicators/blob/master/RAND_RR1500.pdf)
+## Excerpts from [*Injury and Illness Surveillance of U.S. Agricultural Workers Assessment of Recommendations and Actions (2017)*](https://github.com/eddiekasner/aghealthindicators/blob/master/RAND_RR1500.pdf)
 
