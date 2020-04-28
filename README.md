@@ -9,7 +9,6 @@
 | US | DOL-BLS | [Current Population Survey (CPS)](https://www.bls.gov/cps/) | ? | Data Download | 
 | US | DOL-BLS | [Geographic Profiles of Employment and Unemployement](https://www.bls.gov/lau/ex14tables.htm) | ? | Data Download |
 | WA | Employment Security| [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | ? | Static PDF Report |
-| WA | Health | [Temporary Worker Housing](http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp) | ? | Online Query Tool |
 
 ## Numerator Data
 | Region | Agency | Data | Attributes | Years | Notes |
@@ -19,14 +18,11 @@
 | US | DOL-ETA | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/) | ? | Data Download; Mental Health Supplement by NIOSH |
 | US | DOL-BLS | [Survey of Occupational Injuries and Illnesses (SOII) and Census of Fatal Occupational Injuries (CFOI)](https://www.bls.gov/iif/oshstate.htm) | ? | Data Downloads; [Occupational Injury and Illness Classification System (OIICS)](https://wwwn.cdc.gov/wisards/oiics/) |
 | US | USDA | [National Agricultural Statistics Service](https://quickstats.nass.usda.gov/) | ? | Online Query Tool; By State/County; .csv Download |
+| US | NIOSH | [NIOSH Worker Health Charts](https://wwwn.cdc.gov/Niosh-whc/) | ? | Online Querty Tools; By State |
 | WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | ? | Online Query Tool, .csv Download |
 | WA | Health | [Comprehensive Hospital Abstract Reporting System (CHARS)](http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS) | ? | .csv Download | 
 | WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | ? | .xls Download |
-
-
-https://lni.wa.gov/safety-health/safety-research/files/2020/80_15_2020_WA_Indicators_2020Jan.pdf (Composite reports; No AFF)
-
-https://www.cste.org/page/OHIndicators (No AFF)
+| WA | Health | [Temporary Worker Housing](http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp) | ? | Online Query Tool |
 
 https://www.who.int/hia/green_economy/indicators_food.pdf (No data; only proposed work)
 
