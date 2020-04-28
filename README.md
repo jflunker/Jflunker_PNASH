@@ -2,8 +2,8 @@
 
 | Region | Agency | Data | Attributes | Years | Notes |
 | ------ | ------ | ---- | ---------- | ----- | ----- |
-| US | NIOSH | [Status of National Agriculture Injury Surveys at NIOSH](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html) | Numerator & Denominator | - Compilation of Data Sources as of ~2016 |
-| US | BLS | [Quarterly Worforce Indicators (QWI)](https://qwiexplorer.ces.census.gov/static/explore.html) | Denominator | Online Query Tool; 4-digit NAICS; By State/County; H2A/H2B Not Included |
+| US | NIOSH | [Status of National Agriculture Injury Surveys at NIOSH](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html) | Numerator & Denominator | Varied | Compilation of Data Sources as of ~2016 |
+| US | BLS | [Quarterly Worforce Indicators (QWI)](https://qwiexplorer.ces.census.gov/static/explore.html) | Denominator | 2014-present | Online Query Tool; 4-digit NAICS; By State/County; H2A/H2B Not Included |
 | US | BLS | [Quarterly Census of Employment and Wages (QCEW)](https://www.bls.gov/cew/) | Denominator | Data Download |
 | US | BLS | [Occupational Information Network (O\*NET)](https://www.onetcenter.org/overview.html) | Numerator & Denominator | Online Query Tool; By Industry/Occupation; [Database](https://www.onetcenter.org/database.html#individual-files) |
 | US | BLS/NIOSH | [Occupational Injury and Illness Classification System (OIICS)](https://wwwn.cdc.gov/wisards/oiics/) | Numerator | Data Download; Software Download |
