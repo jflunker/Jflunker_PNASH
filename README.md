@@ -11,8 +11,8 @@
 | WA | Employment Security| [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | ? | ? | Static PDF Report |
 
 ## Numerator Data
-| Region | Agency | Data | Attributes | Years | Notes |
-| ------ | ------ | ---- | ---------- | ----- | ----- |
+| Region | Agency | Data | Attributes | Years | Notes | Strengths | Limitations |
+| ------ | ------ | ---- | ---------- | ----- | ----- | --------- | ----------- |
 | US | NIOSH | [Status of National Agriculture Injury Surveys at NIOSH](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html) | ? | ? - 2016 | Compilation of Data Sources |
 | US | DOL-BLS | [Occupational Information Network (O\*NET)](https://www.onetcenter.org/overview.html) | ? | Varies | Online Query Tool; By Industry/Occupation; [Database](https://www.onetcenter.org/database.html#individual-files) |
 | US | DOL-ETA | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/pages/public-data/) | ? | ? | Data Download; Mental Health Supplement by NIOSH |
