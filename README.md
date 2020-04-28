@@ -1,6 +1,6 @@
 # Ag Health Indicators
 
-Excerpts from *A Smarter National Surveillance System for Occupational Safety and Health in the 21st Century (2018)*
+Excerpts from [*A Smarter National Surveillance System for Occupational Safety and Health in the 21st Century (2018)*](https://github.com/eddiekasner/aghealthindicators/blob/master/24835.pdf)
 
 **Excerpt #1**
 
