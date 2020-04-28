@@ -4,9 +4,13 @@
 | ------ | ------ | ---- | ---------- | ----- |
 | US | NIOSH | [Status of National Agriculture Injury Surveys at NIOSH](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html) | Numerator & Denominator | Compilation of Data Sources as of ~2016 |
 | US | BLS | [Quarterly Worforce Indicators (QWI)](https://qwiexplorer.ces.census.gov/static/explore.html) | Denominator | Online Query Tool; 4-digit NAICS; By State/County; H2A/H2B Not Included |
-| US | BLS | [Occupational Information Network (O\*NET)](https://www.onetcenter.org/overview.html) | Denominator | Online Query Tool; By Industry/Occupation; [Database](https://www.onetcenter.org/database.html#individual-files) |
+| US | BLS | [Quarterly Census of Employment and Wages (QCEW)](https://www.bls.gov/cew/) | Denominator | Data Download |
+| US | BLS | [Occupational Information Network (O\*NET)](https://www.onetcenter.org/overview.html) | Numerator & Denominator | Online Query Tool; By Industry/Occupation; [Database](https://www.onetcenter.org/database.html#individual-files) |
 | US | BLS/NIOSH | [Occupational Injury and Illness Classification System (OIICS)](https://wwwn.cdc.gov/wisards/oiics/) | Numerator | Data Download; Software Download |
-| US | BLS | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/) | Denominiator | Data Download; Mental Health Supplement by NIOSH |
+| US | BLS | [Survey of Occupational Injuries and Illnesses (SOII) and Census of Fatal Occupational Injuries (CFOI)](https://www.bls.gov/iif/oshstate.htm) | Numerator & Denominator | Data Downloads |
+| US | BLS | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/) | Numerator & Denominiator | Data Download; Mental Health Supplement by NIOSH |
+| US | BLS | [Current Population Survey (CPS)](https://www.bls.gov/cps/) | Denominator | Data Download | 
+| US | BLS | [Geographic Profiles of Employment and Unemployement\(https://www.bls.gov/lau/ex14tables.htm) | Denominator | Data Download |
 | US | USDA | [National Agricultural Statistics Service](https://quickstats.nass.usda.gov/) | Numerator | Online Query Tool; By State/County; .csv Download |
 | WA | Employment Security| [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | Denominator | Static PDF Report |
 | WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | Numerator, Denominator, Rates | Online Query Tool, .csv Download |
@@ -15,17 +19,7 @@
 | WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | Numerator | .xls Download |
 
 
-BLS - SOII: https://www.bls.gov/iif/oshstate.htm
-
-BLS - CPS: https://www.bls.gov/cps/
-
-BLS - Geographic Profiles of Employment and Unemployment: https://www.bls.gov/opub/geographic-profile/
-
-BLS - QCEW: https://www.bls.gov/cew/
-
 ## Static Data Source (e.g. pdf reports)
-
-https://www.cdc.gov/niosh/agforfish/aginjurysurv.html
 
 https://lni.wa.gov/safety-health/safety-research/files/2020/80_15_2020_WA_Indicators_2020Jan.pdf (Composite reports; No AFF)
 
