@@ -23,8 +23,7 @@
 | US | Census | [American Community Survey](https://www.census.gov/programs-surveys/acs) | ? | Varies; [COVID-19 Data](https://www.census.gov/topics/preparedness/events/pandemics/covid-19.html) |
 | US | USDA | 
 | WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | ? | Online Query Tool, .csv Download |
-| WA | Health | [Comprehensive Hospital Abstract Reporting System (CHARS)](http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS) | ? | .csv Download | Allows for identification of cancer rates and pneumoconiosis; Provides information on age/race; May be available at the zip code level; May link to LNI database; May provide work related hospitalizations; Pneumoconiosis estimates
-| Does not include occupation|
+| WA | Health | [Comprehensive Hospital Abstract Reporting System (CHARS)](http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS) | ? | .csv Download | Allows for identification of cancer rates and pneumoconiosis; Provides information on age/race; May be available at the zip code level; May link to LNI database; May provide work related hospitalizations; Pneumoconiosis estimates| Does not include occupation|
 | WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | ? | .xls Download |
 | WA | Labor & Industries | [Ongoing SHARP Project Research Projects](https://lni.wa.gov/safety-health/safety-research/ongoing-projects/) | ? | PDF Reports |
 | WA | Health | [Temporary Worker Housing](http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp) | ? | Online Query Tool | 
