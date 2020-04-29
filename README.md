@@ -6,7 +6,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 
 ### 1. [Status of National Agriculture Injury Surveys at NIOSH](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html)
 
-> **1.1.** "Although no longer actively conducting national agricultural injury surveys, NIOSH remains committed to the prevention of injuries, illnesses, and deaths in the agriculture sector. To do this, NIOSH will continue to work with its extramural partners to promote advances in agricultural injury surveillance; facilitate the use of surveillance information for prevention efforts among partners and stakeholders; and encourage the inclusion and accurate coding of industry and occupation in existing and future databases."
+> **1.1.** "Although no longer actively conducting national agricultural injury surveys, NIOSH remains committed to the prevention of injuries, illnesses, and deaths in the agriculture sector. To do this, NIOSH will continue to work with its extramural partners to promote advances in agricultural injury surveillance; facilitate the use of surveillance information for prevention efforts among partners and stakeholders; and encourage the inclusion and accurate coding of industry and occupation in existing and future databases." -website
 
 ### 2. [Injury and Illness Surveillance of U.S. Agricultural Workers Assessment of Recommendations and Actions (RAND 2017)](https://github.com/eddiekasner/aghealthindicators/blob/master/RAND_RR1500.pdf)
 
