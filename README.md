@@ -1,6 +1,6 @@
 # Ag Health Indicators
 
-This page is divided into four parts:
+This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) surveillance efforts](## Review of AFF Surveillance Efforts) led by NIOSH and links to [data sources](## Data Sources) useful for defining population burdens.
 
 ## Review of AFF Surveillance Efforts
 
