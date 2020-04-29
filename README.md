@@ -41,8 +41,8 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 
 ### Denominator Data
 
-| Region | Agency | Data | Years | Attributes | Strengths | Limitations |
-| ------ | ------ | ---- | ----- | ---------- | --------- | ----------- |
+| Region | Agency | Data | Years | Attributes | Strengths | Limitations | AFF |
+| ------ | ------ | ---- | ----- | ---------- | --------- | ----------- | --- |
 | US | DOL-BLS | [Quarterly Worforce Indicators (QWI)](https://qwiexplorer.ces.census.gov/static/explore.html) | 2014-present | Online Query Tool; Various Types of Data Downloads; By State/County; H2A/H2B Not Included; Earlier Years Possible; 4-digit NAICS |
 | US | DOL-BLS | [Quarterly Census of Employment and Wages (QCEW)](https://www.bls.gov/cew/downloadable-data-files.htm) |1990-present | .csv Download; 4-digit NAICS |
 | US | DOL-BLS | [Current Population Survey (CPS)](https://www.bls.gov/cps/tables.htm) | 2002-present | .xls Download | 
@@ -51,8 +51,8 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 
 ### Numerator Data
 
-| Region | Agency | Data | Years | Attributes | Strengths | Limitations |
-| ------ | ------ | ---- | ----- | ---------- | --------- | ----------- |
+| Region | Agency | Data | Years | Attributes | Strengths | Limitations | AFF |
+| ------ | ------ | ---- | ----- | ---------- | --------- | ----------- | --- |
 | US | DOL-BLS | [Occupational Information Network (O\*NET)](https://www.onetcenter.org/overview.html) | Varies | Online Query Tool; By Industry/Occupation; [Link to Database](https://www.onetcenter.org/database.html#individual-files) |
 | US | DOL-ETA | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/public-data/) | 1989-2016 | .sas, .csv, .xls Downloads; Mental Health Supplement by NIOSH |
 | US | DOL-BLS | [Survey of Occupational Injuries and Illnesses (SOII) and Census of Fatal Occupational Injuries (CFOI)](https://www.bls.gov/iif/oshstate.htm) | 1992-2018 | Data Downloads; [Occupational Injury and Illness Classification System (OIICS)](https://wwwn.cdc.gov/wisards/oiics/) |
