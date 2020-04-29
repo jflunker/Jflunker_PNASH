@@ -1,6 +1,6 @@
 # Ag Health Indicators
 
-This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) surveillance efforts](#review-of-aff-surveillance-efforts) led by NIOSH and links to [data sources](#data-sources) useful for defining population burden in the Pacific Northwest. Please let Eddie (ejkasner@uw.edu) and Elena (elaustin@uw.edu) know about any missing datasets. We will use this information to help teams define population burden for project proposals using online query tools or [sharing R code](https://github.com/elaustin/Ag-Health-Indicators).
+This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) surveillance efforts](#review-of-aff-surveillance-efforts) led by NIOSH and links to [data sources](#data-sources) useful for defining population burden in the Pacific Northwest. Please let Eddie (ejkasner@uw.edu) and Elena (elaustin@uw.edu) know about any missing datasets. We will use this information to help teams define population burden for project proposals using online query tools or [sharing R code](https://github.com/elaustin/Ag-Health-Indicators). While there are several sources for agricultural data, we are exploring the availability of forestry and fishing data.
 
 ## Review of AFF Surveillance Efforts
 
@@ -53,6 +53,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | US | NIOSH | [Current Worker Health Surveillance Projects](https://www.cdc.gov/niosh/topics/surveillance/data.html) | ? | Varies |
 | US | Census | [American Community Survey](https://www.census.gov/programs-surveys/acs) | ? | Varies; [COVID-19 Data](https://www.census.gov/topics/preparedness/events/pandemics/covid-19.html) |
 | US | USDA | 
+| US | NIOSH | 
 | WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | ? | Online Query Tool, .csv Download |
 | WA | Health | [Comprehensive Hospital Abstract Reporting System (CHARS)](http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS) | ? | .csv Download | Allows for identification of cancer rates and pneumoconiosis; Provides information on age/race; May be available at the zip code level; May link to LNI database; May provide work related hospitalizations; Pneumoconiosis estimates| Does not include occupation|
 | WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | ? | .xls Download |
