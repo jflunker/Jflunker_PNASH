@@ -31,7 +31,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 
 ### 4. [NIOSH Implementation Plan (2019)](https://www.cdc.gov/niosh/topics/surveillance/pdfs/A-Smarter-National-Surveillance-System-Final.pdf)
 
-> **4.1** "NIOSH uses the **'Burden, Need, and Impact'** approach to provide a strategic, structured, consistent, and transparent method to identify the highest occupational safety and health priorities and determine Institute research decisions that will have the greatest impact, in terms of reducing burden and improving well-being. (Felknor, 2019) The NIOSH Surveillance and Economic Programs are largely responsible for developing and providing data on burden at the national level using several sources. This includes general health surveillance metrics such as the magnitude of the problem as measured by counts or rates of a condition, exposure metrics, and trends by industry as well as related economic metrics." -p.26
+> **4.1** "NIOSH uses the [**'Burden, Need, and Impact'**](https://www.cdc.gov/niosh/programs/bni.html) approach to provide a strategic, structured, consistent, and transparent method to identify the highest occupational safety and health priorities and determine Institute research decisions that will have the greatest impact, in terms of reducing burden and improving well-being. (Felknor, 2019) The NIOSH Surveillance and Economic Programs are largely responsible for developing and providing data on burden at the national level using several sources. This includes general health surveillance metrics such as the magnitude of the problem as measured by counts or rates of a condition, exposure metrics, and trends by industry as well as related economic metrics." -p.26
 
 ## Data Sources
 
