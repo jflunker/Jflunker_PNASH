@@ -31,6 +31,8 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 
 ### 4. [NIOSH Implementation Plan (2019)](https://www.cdc.gov/niosh/topics/surveillance/pdfs/A-Smarter-National-Surveillance-System-Final.pdf)
 
+> "NIOSH uses the 'Burden, Need, and Impact' approach to provide a strategic, structured, consistent, and transparent method to identify the highest occupational safety and health priorities and determine Institute research decisions that will have the greatest impact, in terms of reducing burden and improving well-being. (Felknor, 2019) The NIOSH Surveillance and Economic Programs are largely responsible for developing and providing data on burden at the national level using several sources. This includes general health surveillance metrics such as the magnitude of the problem as measured by counts or rates of a condition, exposure metrics, and trends by industry as well as related economic metrics." -p.26
+
 ## Data Sources
 
 ### Denominator Data
@@ -52,7 +54,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | US | DOL-BLS | [Survey of Occupational Injuries and Illnesses (SOII) and Census of Fatal Occupational Injuries (CFOI)](https://www.bls.gov/iif/oshstate.htm) | ? | Data Downloads; [Occupational Injury and Illness Classification System (OIICS)](https://wwwn.cdc.gov/wisards/oiics/) |
 | US | USDA | [National Agricultural Statistics Service](https://quickstats.nass.usda.gov/) | ? | Online Query Tool; By State/County; .csv Download; [Ag Census](https://www.nass.usda.gov/AgCensus/); [Importing to R](https://steemit.com/education/@somethingburger/importing-usda-census-of-agriculture-data-into-r-1511564625-3931718)|
 | US | NIOSH | [Worker Health Charts](https://wwwn.cdc.gov/Niosh-whc/) | ? | Online Querty Tools; By State |
-| US | NIOSH | [Current Worker Health Surveillance Projects](https://www.cdc.gov/niosh/topics/surveillance/data.html) | ? | Varies |
+| US | NIOSH | [Worker Health Surveillance Projects](https://www.cdc.gov/niosh/topics/surveillance/data.html) | ? | Varies |
 | US | Census | [American Community Survey](https://www.census.gov/programs-surveys/acs) | ? | Varies; [COVID-19 Data](https://www.census.gov/topics/preparedness/events/pandemics/covid-19.html) |
 | US | USDA | 
 | US | NIOSH | 
