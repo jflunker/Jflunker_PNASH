@@ -1,6 +1,6 @@
 # Ag Health Indicators
 
-This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) surveillance efforts](#review-of-aff-surveillance-efforts) led by NIOSH and links to [data sources](#data-sources) useful for defining population burdens.
+This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) surveillance efforts](#review-of-aff-surveillance-efforts) led by NIOSH and links to [data sources](#data-sources) useful for defining population burden in the Pacific Northwest.
 
 ## Review of AFF Surveillance Efforts
 
