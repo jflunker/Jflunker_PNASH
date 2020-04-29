@@ -29,6 +29,8 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 >   - Foster increased coordination and communication between its intramural and extramural surveillance programs.
 >   - Encourage NIOSH-funded Education Research and Training Centers and Agricultural Health and Safety Centers to provide technical and research support to state surveillance programs in their regions as part of their required outreach and education core activity." - p.123-124
 
+### 4. [NIOSH Implementation Plan (2019)](https://www.cdc.gov/niosh/topics/surveillance/pdfs/A-Smarter-National-Surveillance-System-Final.pdf)
+
 ## Data Sources
 
 ### Denominator Data
