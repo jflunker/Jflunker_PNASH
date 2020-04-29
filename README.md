@@ -11,8 +11,7 @@
 - *1.1: Develop concise definitions of populations at occupational exposure risk, and profile them by AgFF commodity specialization, demographic factors, work organization patterns, worksite tasks across various enterprise types, and knowledge or use of emerging technologies.*
 - *5.2: Identify and evaluate the potential of existing data sources (including those currently or recently used by NIOSH) for illness and injury surveillance of agricultural workers (includes actions 2.1 and 5.1)." - p.59-60*
 
-## 3. 
-[A Smarter National Surveillance System for Occupational Safety and Health in the 21st Century (NASEM 2018)](https://github.com/eddiekasner/aghealthindicators/blob/master/24835.pdf)
+## 3. [A Smarter National Surveillance System for Occupational Safety and Health in the 21st Century (NASEM 2018)](https://github.com/eddiekasner/aghealthindicators/blob/master/24835.pdf)
 
 **Excerpt #1**: *"The ability to carry out rigorous workforce safety and health surveillance has other challenges as well. For example, in certain industry sectors (such as agriculture) or demographic groups (such as day laborers or teenagers), the total number of workers in an industry is necessarily a rough estimate due to temporal fluctuations or the nature of the work. The limitations of such denominator data make it difficult to determine baseline rates for injuries or illnesses in order to measure risks, track trends, and evaluate the effectiveness of efforts to reduce injury and disease." -p.19*
 
