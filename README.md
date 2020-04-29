@@ -31,7 +31,11 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 
 ### 4. [NIOSH Implementation Plan (2019)](https://www.cdc.gov/niosh/topics/surveillance/pdfs/A-Smarter-National-Surveillance-System-Final.pdf)
 
-> **4.1** "NIOSH uses the [**'Burden, Need, and Impact'**](https://www.cdc.gov/niosh/programs/bni.html) approach to provide a strategic, structured, consistent, and transparent method to identify the highest occupational safety and health priorities and determine Institute research decisions that will have the greatest impact, in terms of reducing burden and improving well-being. (Felknor, 2019) The NIOSH Surveillance and Economic Programs are largely responsible for developing and providing data on burden at the national level using several sources. This includes general health surveillance metrics such as the magnitude of the problem as measured by counts or rates of a condition, exposure metrics, and trends by industry as well as related economic metrics." -p.26
+> **4.1.** "NIOSH uses the [**'Burden, Need, and Impact'**](https://www.cdc.gov/niosh/programs/bni.html) approach to provide a strategic, structured, consistent, and transparent method to identify the highest occupational safety and health priorities and determine Institute research decisions that will have the greatest impact, in terms of reducing burden and improving well-being. (Felknor, 2019) The NIOSH Surveillance and Economic Programs are largely responsible for developing and providing data on burden at the national level using several sources. This includes general health surveillance metrics such as the magnitude of the problem as measured by counts or rates of a condition, exposure metrics, and trends by industry as well as related economic metrics." -p.26
+
+### 5. [Evaluation of NIOSH Programs (Ongoing)](https://www.cdc.gov/niosh/programs/review/default.html)
+
+> **5.1.** "hese new evaluation studies have the same goal of assessing program relevance and impact through a peer review process. However, based on the lessons learned from the previous eight reviews and advances in evaluation science, NIOSH evaluators are applying a theory-based approach to the evaluations: a modified version of Contribution Analysis.1 The emphasis of this approach is on demonstrating a program’s contribution to an outcome rather than establishing causal attribution."
 
 ## Data Sources
 
