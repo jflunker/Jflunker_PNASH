@@ -1,6 +1,6 @@
 # AFF Health Indicators
 
-This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) surveillance efforts](#review-of-aff-surveillance-efforts) led by NIOSH and links to [data sources](#data-sources) useful for defining workforce population burdens in the Pacific Northwest. This information might help teams address the "BNI" framework for project proposals using online query tools or [sharing R code](https://github.com/elaustin/Ag-Health-Indicators). While there are several sources for agricultural data, we are still exploring the sources of publicly available data for forestry and fishing. Please let Eddie (ejkasner@uw.edu) and Elena (elaustin@uw.edu) know about any missing datasets or your data analysis support needs. 
+This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) surveillance efforts](#review-of-aff-surveillance-efforts) led by NIOSH and links to [data sources](#data-sources) useful for defining workforce population burdens in the Pacific Northwest. This information might help teams address the "BNI" framework for project proposals using online query tools or [sharing R code](https://github.com/elaustin/Ag-Health-Indicators). We are currently trying to characterize stengths, limitations, and whether each source offers information about agriculture, forestry, and/or fishing. Please let Eddie (ejkasner@uw.edu) and Elena (elaustin@uw.edu) know about any missing datasets or data analysis support needs. 
 
 ## Review of AFF Surveillance Efforts
 
