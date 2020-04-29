@@ -2,11 +2,13 @@
 
 This page is divided into four parts:
 
-## 1. [Status of National Agriculture Injury Surveys at NIOSH](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html)
+## Review of AFF Surveillance Efforts
+
+### 1. [Status of National Agriculture Injury Surveys at NIOSH](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html)
 
 > **1.1.** *"Although no longer actively conducting national agricultural injury surveys, NIOSH remains committed to the prevention of injuries, illnesses, and deaths in the agriculture sector. To do this, NIOSH will continue to work with its extramural partners to promote advances in agricultural injury surveillance; facilitate the use of surveillance information for prevention efforts among partners and stakeholders; and encourage the inclusion and accurate coding of industry and occupation in existing and future databases."*
 
-## 2. [Injury and Illness Surveillance of U.S. Agricultural Workers Assessment of Recommendations and Actions (RAND 2017)](https://github.com/eddiekasner/aghealthindicators/blob/master/RAND_RR1500.pdf)
+### 2. [Injury and Illness Surveillance of U.S. Agricultural Workers Assessment of Recommendations and Actions (RAND 2017)](https://github.com/eddiekasner/aghealthindicators/blob/master/RAND_RR1500.pdf)
 
 > **2.1.** *"The small population of workers directly responsible for feeding, clothing, and fueling the nation are shouldering a heavy public health burden. Since its inception, the AgFF Program has spearheaded numerous surveillance initiatives to understand the magnitude of injuries and illnesses in agricultural worker populations, identify vulnerable groups, and evaluate the effectiveness of interventions. In 2012, the program underwent a review from an independent panel convened to evaluate progress in program relevance and impact.7 The panel report included several recommendations for NIOSH to improve agricultural injury and illness surveillance. In certain instances, the panel suggested specific activities to perform to improve surveillance, include vulnerable populations, and extend NIOSH research to address emerging health issues faced by farmworkers. However, the panel report itself was unclear regarding how NIOSH should prioritize recommendations and actually implement activities. In 2015, NIOSH contracted with the RAND Corporation to assess options for action in response to panel recommendations. The goal of this report is to provide NIOSH with an assessment of the feasibility and desirability of carrying out actions to meet surveillance-related recommendations given current AgFF Program resources and priorities." -p.ix-x*
 
@@ -14,7 +16,7 @@ This page is divided into four parts:
 > - *1.1: Develop concise definitions of populations at occupational exposure risk, and profile them by AgFF commodity specialization, demographic factors, work organization patterns, worksite tasks across various enterprise types, and knowledge or use of emerging technologies.*
 > - *5.2: Identify and evaluate the potential of existing data sources (including those currently or recently used by NIOSH) for illness and injury surveillance of agricultural workers (includes actions 2.1 and 5.1)." - p.59-60*
 
-## 3. [A Smarter National Surveillance System for Occupational Safety and Health in the 21st Century (NASEM 2018)](https://github.com/eddiekasner/aghealthindicators/blob/master/24835.pdf)
+### 3. [A Smarter National Surveillance System for Occupational Safety and Health in the 21st Century (NASEM 2018)](https://github.com/eddiekasner/aghealthindicators/blob/master/24835.pdf)
 
 > **3.1.** *"The ability to carry out rigorous workforce safety and health surveillance has other challenges as well. For example, in certain industry sectors (such as agriculture) or demographic groups (such as day laborers or teenagers), the total number of workers in an industry is necessarily a rough estimate due to temporal fluctuations or the nature of the work. The limitations of such denominator data make it difficult to determine baseline rates for injuries or illnesses in order to measure risks, track trends, and evaluate the effectiveness of efforts to reduce injury and disease." -p.19*
 
@@ -26,8 +28,10 @@ This page is divided into four parts:
 >   - *Explore and implement, as appropriate, alternative approaches to funding ongoing surveillance in the states as applied public health programs rather than research programs.*
 >   - *Foster increased coordination and communication between its intramural and extramural surveillance programs.*
 >   - *Encourage NIOSH-funded Education Research and Training Centers and Agricultural Health and Safety Centers to provide technical and research support to state surveillance programs in their regions as part of their required outreach and education core activity." - p.123-124*
-    
-## Denominator Data
+
+## Data Sources
+
+### Denominator Data
 
 | Region | Agency | Data | Years | Attributes | Strengths | Limitations |
 | ------ | ------ | ---- | ----- | ---------- | --------- | ----------- |
@@ -37,7 +41,8 @@ This page is divided into four parts:
 | US | DOL-BLS | [Geographic Profiles of Employment and Unemployement](https://www.bls.gov/lau/ex14tables.htm) | 1999-present | Data Download |
 | WA | Employment Security| [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | 2013-2017 | Static PDF Report |
 
-## Numerator Data
+### Numerator Data
+
 | Region | Agency | Data | Years | Attributes | Strengths | Limitations |
 | ------ | ------ | ---- | ----- | ---------- | --------- | ----------- |
 | US | DOL-BLS | [Occupational Information Network (O\*NET)](https://www.onetcenter.org/overview.html) | Varies | Online Query Tool; By Industry/Occupation; [Database](https://www.onetcenter.org/database.html#individual-files) |
