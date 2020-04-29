@@ -24,7 +24,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 
 > **3.3.** "Recommendation C: NIOSH should lead a collaborative effort with BLS, OSHA, the states, and other relevant federal agencies to establish and strengthen state-based OSH surveillance programs. This should be carried out as part of a national coordinated effort to monitor priority conditions, hazards, and exposures; to identify emerging workplace risks; and to facilitate prevention programs that address these concerns. Furthermore, this leverage surveillance and prevention expertise across agencies. This should include sharing data and taking advantage of unique state-level data sets and case-based surveillance capacities to identify and respond to emerging occupational safety and health hazards and conditions.
 > - Public Health Agency Collaboration Within States: NIOSH and other CDC centers that support state-based surveillance and prevention activities should promote collaboration among their state-level programs to monitor and address public health problems of shared concern, such as violence, asthma, infectious disease, traffic safety, and health inequities among vulnerable population groups.
-> - NIOSH should also
+> - NIOSH should also:
 >   - Explore and implement, as appropriate, alternative approaches to funding ongoing surveillance in the states as applied public health programs rather than research programs.
 >   - Foster increased coordination and communication between its intramural and extramural surveillance programs.
 >   - Encourage NIOSH-funded Education Research and Training Centers and Agricultural Health and Safety Centers to provide technical and research support to state surveillance programs in their regions as part of their required outreach and education core activity." - p.123-124
@@ -35,7 +35,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 
 ### 5. [Evaluation of NIOSH Programs (Ongoing)](https://www.cdc.gov/niosh/programs/review/default.html)
 
-> **5.1.** "These new evaluation studies have the same goal of assessing program relevance and impact through a peer review process. However, based on the lessons learned from the previous eight reviews and advances in evaluation science, NIOSH evaluators are applying a theory-based approach to the evaluations: a modified version of Contribution Analysis.1 The emphasis of this approach is on demonstrating a program’s contribution to an outcome rather than establishing causal attribution."
+> **5.1.** "These new evaluation studies have the same goal of assessing program relevance and impact through a peer review process. However, based on the lessons learned from the previous eight reviews and advances in evaluation science, NIOSH evaluators are applying a theory-based approach to the evaluations: a modified version of Contribution Analysis. The emphasis of this approach is on demonstrating a program’s contribution to an outcome rather than establishing causal attribution." -website
 
 ## Data Sources
 
