@@ -1,7 +1,7 @@
 # Ag Health Indicators
 
-## [*Status of National Agriculture Injury Surveys at NIOSH*](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html).
-"Although no longer actively conducting national agricultural injury surveys, NIOSH remains committed to the prevention of injuries, illnesses, and deaths in the agriculture sector. To do this, NIOSH will continue to work with its extramural partners to promote advances in agricultural injury surveillance; facilitate the use of surveillance information for prevention efforts among partners and stakeholders; and encourage the inclusion and accurate coding of industry and occupation in existing and future databases."
+## [*Status of National Agriculture Injury Surveys at NIOSH*](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html)
+*"Although no longer actively conducting national agricultural injury surveys, NIOSH remains committed to the prevention of injuries, illnesses, and deaths in the agriculture sector. To do this, NIOSH will continue to work with its extramural partners to promote advances in agricultural injury surveillance; facilitate the use of surveillance information for prevention efforts among partners and stakeholders; and encourage the inclusion and accurate coding of industry and occupation in existing and future databases."*
 
 ## [*A Smarter National Surveillance System for Occupational Safety and Health in the 21st Century (NASEM 2018)*](https://github.com/eddiekasner/aghealthindicators/blob/master/24835.pdf)
 
@@ -39,7 +39,6 @@ activities should promote collaboration among their state-level programs to moni
 ## Numerator Data
 | Region | Agency | Data | Years | Attributes | Strengths | Limitations |
 | ------ | ------ | ---- | ----- | ---------- | --------- | ----------- |
-| US | NIOSH | [Status of National Agriculture Injury Surveys at NIOSH](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html) | ? - 2016 | Compilation of Data Sources |
 | US | DOL-BLS | [Occupational Information Network (O\*NET)](https://www.onetcenter.org/overview.html) | Varies | Online Query Tool; By Industry/Occupation; [Database](https://www.onetcenter.org/database.html#individual-files) |
 | US | DOL-ETA | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/pages/public-data/) | ? | Data Download; Mental Health Supplement by NIOSH |
 | US | DOL-BLS | [Survey of Occupational Injuries and Illnesses (SOII) and Census of Fatal Occupational Injuries (CFOI)](https://www.bls.gov/iif/oshstate.htm) | ? | Data Downloads; [Occupational Injury and Illness Classification System (OIICS)](https://wwwn.cdc.gov/wisards/oiics/) |
