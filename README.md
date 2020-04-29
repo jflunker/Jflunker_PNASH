@@ -1,5 +1,9 @@
 # Ag Health Indicators
 
+This page is divided into four parts:
+
+\toc
+
 ## 1. [Status of National Agriculture Injury Surveys at NIOSH](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html)
 *"Although no longer actively conducting national agricultural injury surveys, NIOSH remains committed to the prevention of injuries, illnesses, and deaths in the agriculture sector. To do this, NIOSH will continue to work with its extramural partners to promote advances in agricultural injury surveillance; facilitate the use of surveillance information for prevention efforts among partners and stakeholders; and encourage the inclusion and accurate coding of industry and occupation in existing and future databases."*
 
