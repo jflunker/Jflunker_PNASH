@@ -1,5 +1,8 @@
 # Ag Health Indicators
 
+## [*Status of National Agriculture Injury Surveys at NIOSH*](https://www.cdc.gov/niosh/agforfish/aginjurysurv.html).
+"Although no longer actively conducting national agricultural injury surveys, NIOSH remains committed to the prevention of injuries, illnesses, and deaths in the agriculture sector. To do this, NIOSH will continue to work with its extramural partners to promote advances in agricultural injury surveillance; facilitate the use of surveillance information for prevention efforts among partners and stakeholders; and encourage the inclusion and accurate coding of industry and occupation in existing and future databases."
+
 ## [*A Smarter National Surveillance System for Occupational Safety and Health in the 21st Century (NASEM 2018)*](https://github.com/eddiekasner/aghealthindicators/blob/master/24835.pdf)
 
 **Excerpt #1**: "The ability to carry out rigorous workforce safety and health surveillance has other challenges as well. For example, in certain industry sectors (such as agriculture) or demographic groups (such as day laborers or teenagers), the total number of workers in an industry is necessarily a rough estimate due to temporal fluctuations or the nature of the work. The limitations of such denominator data make it difficult to determine baseline rates for injuries or illnesses in order to measure risks, track trends, and evaluate the effectiveness of efforts to reduce injury and disease." -p.19
