@@ -62,7 +62,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | US | Census | [American Community Survey](https://www.census.gov/programs-surveys/acs) | ? | Varies; [COVID-19 Data](https://www.census.gov/topics/preparedness/events/pandemics/covid-19.html) |
 | US | USDA | 
 | US | NIOSH | 
-| US | USGS | [NAWQA: The Pesticide Synthesis Project](https://water.usgs.gov/nawqa/pnsp/usage/maps/) |
+| US | USGS | [NAWQA: Pesticide National Synthesis Project](https://water.usgs.gov/nawqa/pnsp/usage/maps/) |
 | WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | ? | Online Query Tool, .csv Download |
 | WA | Health | [Comprehensive Hospital Abstract Reporting System (CHARS)](http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS) | ? | .csv Download | Allows for identification of cancer rates and pneumoconiosis; Provides information on age/race; May be available at the zip code level; May link to LNI database; May provide work related hospitalizations; Pneumoconiosis estimates| Does not include occupation|
 | WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | ? | .xls Download |
