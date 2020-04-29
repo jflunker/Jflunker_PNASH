@@ -66,7 +66,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | ? | Online Query Tool, .csv Download |
 | WA | Health | [Comprehensive Hospital Abstract Reporting System (CHARS)](http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS) | ? | .csv Download | Allows for identification of cancer rates and pneumoconiosis; Provides information on age/race; May be available at the zip code level; May link to LNI database; May provide work related hospitalizations; Pneumoconiosis estimates| Does not include occupation|
 | WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | ? | .xls Download |
-| WA | Labor & Industries | [Ongoing SHARP Project Research Projects](https://lni.wa.gov/safety-health/safety-research/ongoing-projects/) | ? | PDF Reports |
+| WA | Labor & Industries | [Ongoing SHARP Research Projects](https://lni.wa.gov/safety-health/safety-research/ongoing-projects/) | ? | PDF Reports |
 | WA | Health | [Temporary Worker Housing](http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp) | ? | Online Query Tool | 
 | WA | UW | [OSHA Indicators Region X](https://deohs.washington.edu/sites/default/files/nwcohs/OSHA_Indicators_Region_X_2009.pdf) | ? | ? | PDF Report |
 | WA | Labor & Industries | [Fatal Work Related Injuries](https://lni.wa.gov/safety-health/safety-research/ongoing-projects/work-related-fatalities-face#hazard-alerts-and-data-summaries) | ? | PDF Reports |
