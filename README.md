@@ -54,7 +54,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | Region | Agency | Data | Years | Attributes | Strengths | Limitations |
 | ------ | ------ | ---- | ----- | ---------- | --------- | ----------- |
 | US | DOL-BLS | [Occupational Information Network (O\*NET)](https://www.onetcenter.org/overview.html) | Varies | Online Query Tool; By Industry/Occupation; [Database](https://www.onetcenter.org/database.html#individual-files) |
-| US | DOL-ETA | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/pages/public-data/) | ? | Data Download; Mental Health Supplement by NIOSH |
+| US | DOL-ETA | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/public-data/) | ? | Data Download; Mental Health Supplement by NIOSH |
 | US | DOL-BLS | [Survey of Occupational Injuries and Illnesses (SOII) and Census of Fatal Occupational Injuries (CFOI)](https://www.bls.gov/iif/oshstate.htm) | ? | Data Downloads; [Occupational Injury and Illness Classification System (OIICS)](https://wwwn.cdc.gov/wisards/oiics/) |
 | US | USDA | [National Agricultural Statistics Service](https://quickstats.nass.usda.gov/) | ? | Online Query Tool; By State/County; .csv Download; [Ag Census](https://www.nass.usda.gov/AgCensus/); [Importing to R](https://steemit.com/education/@somethingburger/importing-usda-census-of-agriculture-data-into-r-1511564625-3931718)|
 | US | NIOSH | [Worker Health Charts](https://wwwn.cdc.gov/Niosh-whc/) | ? | Online Querty Tools; By State |
