@@ -66,7 +66,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | ? | .xls Download |
 | WA | Labor & Industries | [Ongoing SHARP Research Projects](https://lni.wa.gov/safety-health/safety-research/ongoing-projects/) | ? | PDF Reports |
 | WA | Health | [Temporary Worker Housing](http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp) | ? | Online Query Tool | 
-| WA | UW | [OSHA Indicators Region X](https://deohs.washington.edu/sites/default/files/nwcohs/OSHA_Indicators_Region_X_2009.pdf) | ? | ? | PDF Report |
+| WA | UW | [OSHA Indicators Region X](https://deohs.washington.edu/sites/default/files/nwcohs/OSHA_Indicators_Region_X_2009.pdf) | ? | PDF Report |
 | WA | Labor & Industries | [Fatal Work Related Injuries](https://lni.wa.gov/safety-health/safety-research/ongoing-projects/work-related-fatalities-face#hazard-alerts-and-data-summaries) | ? | PDF Reports |
 
 https://www.health.state.mn.us/communities/occhealth/data/aginjury.html (Similar approach could be used for PNW)
