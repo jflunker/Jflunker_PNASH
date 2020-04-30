@@ -60,7 +60,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | US | NIOSH | [Worker Health Charts](https://wwwn.cdc.gov/Niosh-whc/) | Varies | Online Query Tools; By State |
 | US | NIOSH | [Worker Health Surveillance Projects](https://www.cdc.gov/niosh/topics/surveillance/data.html) | ? | Varies |
 | US | Census | [American Community Survey](https://www.census.gov/acs/www/data/data-tables-and-tools/) | 2005-present | [COVID-19 Data](https://www.census.gov/topics/preparedness/events/pandemics/covid-19.html) |
-| US | USGS | [NAWQA: Pesticide National Synthesis Project](https://water.usgs.gov/nawqa/pnsp/usage/maps/) | 1992-2017 |
+| US | USGS | [NAWQA: Pesticide National Synthesis Project](https://water.usgs.gov/nawqa/pnsp/usage/maps/) | 1992-2017 | [Example for Yakima County](https://github.com/eddiekasner/pestuse/blob/master/pestuse.pdf) |
 | WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | ? | Online Query Tool, .csv Download |
 | WA | Health | [Comprehensive Hospital Abstract Reporting System (CHARS)](http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS) | ? | .csv Download | | |
 | WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | ? | .xls Download |
