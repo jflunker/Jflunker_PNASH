@@ -47,7 +47,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | US | DOL-BLS | [Quarterly Census of Employment and Wages (QCEW)](https://www.bls.gov/cew/downloadable-data-files.htm) |1990-present | .csv Download; 4-digit NAICS |
 | US | DOL-BLS | [Current Population Survey (CPS)](https://www.bls.gov/cps/tables.htm) | 2002-present | .xls Download | 
 | US | DOL-BLS | [Geographic Profiles of Employment and Unemployement](https://www.bls.gov/lau/ex14tables.htm) | 1999-present | .xls Download |
-| WA | Employment Security| [Agricultual Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | 2013-2017 | PDF Report |
+| WA | Employment Security| [Agricultural Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | 2013-2017 | PDF Report |
 
 ### Numerator Data
 
