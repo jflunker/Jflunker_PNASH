@@ -52,7 +52,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 
 ### Numerator Data
 
-| Region | Agency | Data | Years | Attributes | Strengths | Limitations | Ag, For, Fish |
+| Region | Agency | Data | Years | Attributes | Strengths | Limitations | Ag, For, Fish | H1-A |
 | ------ | ------ | ---- | ----- | ---------- | --------- | ----------- | ------------- |
 | US | DOL-BLS | [Occupational Information Network (O\*NET)](https://www.onetcenter.org/overview.html) | Varies | Online Query Tool; By Industry/Occupation; [Link to Database](https://www.onetcenter.org/database.html#individual-files) |
 | US | DOL-ETA | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/public-data/) | 1989-2016 | .sas, .csv, .xls Downloads; Mental Health Supplement by NIOSH |
