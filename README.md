@@ -79,6 +79,32 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | OR | Labor & Industries  |
 | OR | OR OSHA | [Compensable fatalities per industry/occupation code](https://www.oregon.gov/dcbs/reports/protection/Pages/compensable-fatalities.aspx) | 2000-2021 | PDF/4-year summary table output | OR occupation and industry specific | 4-year increments |
 | OR | OR BLS | [CFOI](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | PDF Reports/Yearly summary | 
+| WA | ESD-WA | [USDOL](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | H2A Temporary agriculture workers - Per county | online query tool |
+
+### Numerator Data
+
+| Region | Agency | Data | Years | Attributes | Strengths | Limitations | Ag, For, Fish |
+| ------ | ------ | ---- | ----- | ---------- | --------- | ----------- | ------------- |
+| US | DOL-BLS | [Occupational Information Network (O\*NET)](https://www.onetcenter.org/overview.html) | Varies | Online Query Tool; By Industry/Occupation; [Link to Database](https://www.onetcenter.org/database.html#individual-files) | 
+| US | DOL-ETA | [National Agricultural Workers Survey (NAWS)](https://www.doleta.gov/naws/public-data/) | 1989-2016 | .sas, .csv, .xls Downloads; Mental Health Supplement by NIOSH |
+| US | DOL-BLS | [Survey of Occupational Injuries and Illnesses (SOII) and Census of Fatal Occupational Injuries (CFOI)](https://www.bls.gov/iif/oshstate.htm) | 1992-2018 | Data Downloads; [Occupational Injury and Illness Classification System (OIICS)](https://wwwn.cdc.gov/wisards/oiics/) |
+| US | USDA | [National Agricultural Statistics Service](https://quickstats.nass.usda.gov/) | Varies (1850-2020) | Online Query Tool; By State/County; .csv Download; [Ag Census](https://www.nass.usda.gov/AgCensus/); [Importing to R](https://steemit.com/education/@somethingburger/importing-usda-census-of-agriculture-data-into-r-1511564625-3931718)|
+| US | NIOSH | [Worker Health Charts](https://wwwn.cdc.gov/Niosh-whc/) | Varies | Online Query Tools; By State |
+| US | NIOSH | [Worker Health Surveillance Projects](https://www.cdc.gov/niosh/topics/surveillance/data.html) | ? | Varies |
+| US | Census | [American Community Survey](https://www.census.gov/acs/www/data/data-tables-and-tools/) | 2005-present | [COVID-19 Data](https://www.census.gov/topics/preparedness/events/pandemics/covid-19.html) |
+| US | USGS | [NAWQA: Pesticide National Synthesis Project](https://water.usgs.gov/nawqa/pnsp/usage/maps/) | 1992-2017 | [Example for Yakima County](https://github.com/eddiekasner/pestuse/blob/master/pestuse.pdf) |
+| WA | Health | [WA Tracking Network](https://fortress.wa.gov/doh/wtn/WTNPortal/) | ? | Online Query Tool, .csv Download | | |
+| WA | Health | [Comprehensive Hospital Abstract Reporting System (CHARS)](http://www.doh.wa.gov/DataandStatisticalReports/HealthcareinWashington/HospitalandPatientData/HospitalDischargeDataCHARS) | ? | .csv Download | 
+| WA | Labor & Industries | [Workers' Comp Injury Data](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data) | ? | .xls Download |
+| WA | Labor & Industries | [Ongoing SHARP Research Projects](https://lni.wa.gov/safety-health/safety-research/ongoing-projects/) | ? | PDF Reports |
+| WA | Health | [Temporary Worker Housing](http://www.healthspace.com/Clients/Washington/State/Web.nsf/home.xsp) | ? | Online Query Tool | 
+| WA | UW | [OSHA Indicators Region X](https://deohs.washington.edu/sites/default/files/nwcohs/OSHA_Indicators_Region_X_2009.pdf) | ? | PDF Report |
+| WA | Labor & Industries | [Fatal Work Related Injuries](https://lni.wa.gov/safety-health/safety-research/ongoing-projects/work-related-fatalities-face#hazard-alerts-and-data-summaries) | ? | PDF Reports |
+| OR | Labor & Industries  |
+| OR | OR OSHA | [Compensable fatalities per industry/occupation code](https://www.oregon.gov/dcbs/reports/protection/Pages/compensable-fatalities.aspx) | 2000-2021 | PDF/4-year summary table output | OR occupation and industry specific | 4-year increments |
+| OR | OR BLS | [CFOI](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | PDF Reports/Yearly summary | 
+
+https://www.health.state.mn.us/communities/occhealth/data/aginjury.html (Similar approach could be used for PNW)
 
 https://www.health.state.mn.us/communities/occhealth/data/aginjury.html (Similar approach could be used for PNW)
 
