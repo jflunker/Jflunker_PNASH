@@ -48,6 +48,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | US | DOL-BLS | [Current Population Survey (CPS)](https://www.bls.gov/cps/tables.htm) | 2002-present | .xls Download | 
 | US | DOL-BLS | [Geographic Profiles of Employment and Unemployement](https://www.bls.gov/lau/ex14tables.htm) | 1999-present | .xls Download | 
 | WA | Employment Security| [Agricultural Workforce Report](https://fortress.wa.gov/esd/employmentdata/reports-publications/industry-reports/agricultural-workforce-report) | 2013-2017 | PDF Report | 
+| WA | ESD-WA | [USDOL](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | H2A Temporary agriculture workers - Per county | online query tool |
 | US | DOL-OFLS| [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 | .xls Download| | | 
 | test2 | | | | | | | 
 
@@ -78,8 +79,8 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | WA | Labor & Industries | [Fatal Work Related Injuries](https://lni.wa.gov/safety-health/safety-research/ongoing-projects/work-related-fatalities-face#hazard-alerts-and-data-summaries) | ? | PDF Reports |
 | OR | Labor & Industries  |
 | OR | OR OSHA | [Compensable fatalities per industry/occupation code](https://www.oregon.gov/dcbs/reports/protection/Pages/compensable-fatalities.aspx) | 2000-2021 | PDF/4-year summary table output | OR occupation and industry specific | 4-year increments |
-| OR | OR BLS | [CFOI](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | PDF Reports/Yearly summary | 
-| WA | ESD-WA | [USDOL](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | H2A Temporary agriculture workers - Per county | online query tool |
+| OR | OR BLS | [Census of Fatal Occupational Injuries](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | PDF Reports/Yearly summary | 
+
 
 ### Numerator Data
 
