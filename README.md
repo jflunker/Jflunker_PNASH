@@ -52,11 +52,13 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | US | DOL-OFLS| [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 | .xls Download| | | 
 | test2 | | | | | | | 
 
-###test
-| test2 | x |x|
-|-------|---|-|
- ||
- ||
+### denominator test
+| Region | agency | data | years | resolution |
+|----------|--------|------|-------|------------|
+|    WA      |        |      |       | State      |
+|     OR     |        |      |       | County      |
+|     ID     |        |      |       | County      |
+|     AL     |        |      |       | County      |
 
 ### Numerator Data
 
