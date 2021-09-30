@@ -69,7 +69,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 |    AL      |    Ag,Fo,Fi      | US census bureau |  [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=2&g=0)      | 2000-2016?           |  County - quarter or year    | den | Tables or PDF |
 |    AL         | Ag,Fo,Fi         |   AL OSHA       | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021? | state, year (4-year increments) | num |
 |    AL         | Ag,Fo,Fi         |   AL BLS        | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num | 
-|    AL         | Ag,Fo,Fi         |   DOL BLS         |  | | | num
+|    AL         | Ag,Fo,Fi         |   DOL BLS         |  | | | num |
 |    US         | Ag H-2A          |  DOL-OFLS         | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 |    US         | Ag, H-2A         | NAWS             | |
  
