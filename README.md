@@ -52,13 +52,14 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | US | DOL-OFLS| [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 | .xls Download| | | 
 | test2 | | | | | | | 
 
-### denominator test
-| Region | agency | data | years | resolution |
-|----------|--------|------|-------|------------|
-|    WA      |        |      |       | State      |
-|     OR     |        |      |       | County      |
-|     ID     |        |      |       | County      |
-|     AL     |        |      |       | County      |
+### New data to add to pre-existing numerator and denominator data tables
+| Region     | Occupation    |agency            | data   | years      | resolution  | Denominator/Numerator|
+|------------|---------------|------------------|--------|------------|-------------|----------|
+|    WA      |    A,F,F      | US census bureau |  [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   2000-2016         |  County - quarter or year  | den
+|    OR      |    A,F,F      | US census bureau | [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |  2000-2016          | County - quarter or year      | den
+|    ID      |    A,F,F      | US census bureau | [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   2000-2016         | County - quarter or year       | den
+|    AL      |    A,F,F      | US census bureau |  [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=2&g=0)      | 2000-2016           |  County - quarter or year    | den
+
 
 ### Numerator Data
 
