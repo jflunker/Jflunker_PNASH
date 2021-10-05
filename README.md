@@ -52,14 +52,15 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 | US | DOL-OFLS| [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 | .xls Download| | | 
 | test2 | | | | | | | 
 
-### New data to add to pre-existing numerator and denominator data tables
-| Region        | Occupation (NAICS)  | agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
-|---------------|---------------------|------------------|--------|------------|-------------|----------------------|------------|
-|    WA         |    Ag,Fo,Fi         | US census bureau |  [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   2000-2016         |  County - quarter or year  | den | |
-|    WA         |    Ag (H-2A)        | USDOL            | [ESD-WA](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | County | den |
-|    WA         |    Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
-|    WA         | see original Kasner tables...NAWS...CFOI, Fatalities, Compensable fatlities       | | | num | |
-|    OR         |    Ag,Fo,Fi         | US census bureau | [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |  2000-2016          | County - quarter or year      | den | |
+### New data to add to pre-existing numerator and denominator data tables?
+| Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
+|---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
+|    WA         |    Ag,Fo,Fi       | US census bureau |  [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   2000-2016         |  County - quarter or year  | den | |
+|    WA         |    Ag (H-2A)      | USDOL            | [ESD-WA](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | County | den |
+|    WA         |    Ag H-2A        |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
+|    WA         | Ag,Fo,Fi          |   WA OSHA       | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021? | state, year (4-year increments) | num |
+|    WA         | Ag,Fo,Fi          |   WA BLS        | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num | 
+|    OR         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |  2000-2016          | County - quarter or year      | den | |
 |    OR         | Ag,Fo,Fi         |   OR OSHA       | [Compensable fatalities per industry/occupation code](https://www.oregon.gov/dcbs/reports/protection/Pages/compensable-fatalities.aspx) | 2000-2021 | state, year (4-year increments) | num | |
 |    OR         | Ag,Fo,Fi         |   OR BLS        | [Census of Fatal Occupational Injuries](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | Yearly summary | num | 
 |    OR         | Ag,Fo,Fi         | DOL BLS         |  | | | num |
@@ -80,6 +81,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 |    OR         | Ag, H-2A         | NAWS?             | |
 |    ID         | Ag, H-2A         | NAWS?             | | 
 |    AK         | Ag, H-2A         | NAWS?            | |
+|    WA  etc    | see original Kasner tables...NAWS...CFOI, Fatalities, Compensable fatlities...much of above is redundant to pre-existing Num/Den tables       | | | num | |
 
 ## Agricultural weather data links (...if want to expan beyond pure surveillance)
 | Region     | agency             | data   | years      | resolution  | Denominator/Numerator| Attributes |
