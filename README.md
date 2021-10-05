@@ -57,23 +57,24 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 |---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
 |    WA         |    Ag,Fo,Fi       | US census bureau |  [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   2000-2016         |  County - quarter or year  | den | |
 |    WA         |    Ag (H-2A)      | USDOL            | [ESD-WA](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | County | den |
-|    WA         |    Ag H-2A        |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
+|    WA         |    Ag H-2A        |   DOL-OFLS       | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 |    WA         | Ag,Fo,Fi          |   WA OSHA       | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021? | state, year (4-year increments) | num |
 |    WA         | Ag,Fo,Fi          |   WA BLS        | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num | 
+|    WA         | Ag,Fo,Fi          | DOL BLS         | Non-fatal injuries | | | num |
 |    OR         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |  2000-2016          | County - quarter or year      | den | |
 |    OR         | Ag,Fo,Fi         |   OR OSHA       | [Compensable fatalities per industry/occupation code](https://www.oregon.gov/dcbs/reports/protection/Pages/compensable-fatalities.aspx) | 2000-2021 | state, year (4-year increments) | num | |
 |    OR         | Ag,Fo,Fi         |   OR BLS        | [Census of Fatal Occupational Injuries](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | Yearly summary | num | 
-|    OR         | Ag,Fo,Fi         | DOL BLS         |  | | | num |
+|    OR         | Ag,Fo,Fi         | DOL BLS         | Non-fatal injuries | | | num |
 |    OR         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 |    ID      |    Ag,Fo,Fi      | US census bureau | [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   2000-2016         | County - quarter or year       | den |
 |    ID         | Ag,Fo,Fi         |   ID OSHA       | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021 | state, year (4-year increments) | num |
 |    ID         | Ag,Fo,Fi         |   ID BLS        | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num | 
-|    ID         | Ag,Fo,Fi         |  DOL BLS         |  | | | num
+|    ID         | Ag,Fo,Fi         |  DOL BLS         |  Non-fatal injuries | | | num
 |    ID         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 |    AK      |    Ag,Fo,Fi      | US census bureau |  [QWI Explorer NAICS 4-digit industries](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=2&g=0)      | 2000-2016?           |  County - quarter or year    | den | Tables or PDF |
 |    AK         | Ag,Fo,Fi         |   AK OSHA       | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021? | state, year (4-year increments) | num |
 |    AK         | Ag,Fo,Fi         |   AK BLS        | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num | 
-|    AK         | Ag,Fo,Fi         |   DOL BLS         |  | | | num |
+|    AK         | Ag,Fo,Fi         |   DOL BLS         |  Non-fatal injuries | | | num |
 |    AK         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 |    US         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 |    US         | Ag, H-2A         | NAWS?             | |
