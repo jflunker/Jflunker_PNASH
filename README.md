@@ -77,7 +77,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 |    ID         | Ag, H-2A         | NAWS?             | | 
 |    AK         | Ag, H-2A         | NAWS?            | |
 
-## Agricultural weather data links
+## Agricultural weather data links (...if want to expan beyond pure surveillance)
 | Region     | agency             | data   | years      | resolution  | Denominator/Numerator| Attributes |
 |------------|--------------------|--------|------------|-------------|----------------------|------------|
 | WA         | AgWeatherNet/WA State University | http://weather.wsu.edu/  |
