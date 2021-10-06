@@ -81,7 +81,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 |    OR         | Ag, H-2A         | NAWS?             | |
 |    ID         | Ag, H-2A         | NAWS?             | | 
 |    AK         | Ag, H-2A         | NAWS?            | |
-|    WA  etc    | see original Kasner tables...NAWS...CFOI, Fatalities, Compensable fatlities...much of above is redundant to pre-existing Num/Den tables       | | | num | |
+|    WA  etc    | see original Kasner tables...NAWS...CFOI, Fatalities, Compensable fatlities...much of above is redundant per state and vs. pre-existing Num/Den tables       | | |  | |
 
 ## Agricultural weather data links (...if want to expan beyond pure surveillance)
 | Region     | agency             | data   | years      | resolution  | Denominator/Numerator| Attributes |
