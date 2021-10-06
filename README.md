@@ -83,7 +83,7 @@ This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) s
 |    AK         | Ag, H-2A         | NAWS?            | |
 |    WA  etc    | see original Kasner tables...NAWS...CFOI, Fatalities, Compensable fatlities...much of above is redundant per state and vs. pre-existing Num/Den tables       | | |  | |
 
-## Agricultural weather data links (...if want to expan beyond pure surveillance)
+## Agricultural weather data links (...if PNASH wants to expand beyond pure surveillance in this arena (ie. GitHub)
 | Region     | agency             | data   | years      | resolution  | Denominator/Numerator| Attributes |
 |------------|--------------------|--------|------------|-------------|----------------------|------------|
 | WA         | AgWeatherNet/WA State University | http://weather.wsu.edu/  |
