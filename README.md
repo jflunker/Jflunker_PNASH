@@ -58,9 +58,9 @@
 
 
 ### Agriculture indicator survey links
-| Survey        | Description       | data             | years  | resolution  |
-|---------------|-------------------|------------------|--------|------------|
-|   National Children’s Center for Rural and Agricultural Health and Safety       |    Data are derived from publicly available reports, such as news media, social media, and obituaries for incidents in agriculture, commercial fishing, and forestry. Intentional and unintentional as well as occupational and non-occupational (e.g. visitors, agritourism) cases are included      | | | |
+| Survey        |     data          | years            | Description  |resolution |
+|---------------|-------------------|------------------|--------------|------------|
+|   National Children’s Center for Rural and Agricultural Health and Safety       |          |  | Data are derived from publicly available reports, such as news media, social media, and obituaries for incidents in agriculture, commercial fishing, and forestry. Intentional and unintentional as well as occupational and non-occupational (e.g. visitors, agritourism) cases are included | |
 | Occupational Injury SUrveillance of Production Agriculture (OISPA) |. |. |. |. |
 | Minority Farm Operator Occupational Injury Surveillance of Production Agriculture (M-OISPA) |. |. |. |. |
 | Farm Safety Survey (FSS)|. |. | 2006, 2011 | no dusk mask questions, only resoirator |
