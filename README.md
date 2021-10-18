@@ -2,6 +2,7 @@
 
 ### new tables
 ### state tables
+
 ### WA
 | Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
 |---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
@@ -14,15 +15,47 @@
 
 ### OR
 
+| Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
+|---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
+|    OR         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |  2000-2016          | County - quarter or year      | den | |
+|    OR         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
+|    OR         | Ag,Fo,Fi         |   OR OSHA       | [Compensable fatalities per industry/occupation code](https://www.oregon.gov/dcbs/reports/protection/Pages/compensable-fatalities.aspx) | 2000-2021 | state, year (4-year increments) | num | |
+|    OR         | Ag,Fo,Fi         |   OR BLS        | [Census of Fatal Occupational Injuries](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | Yearly summary | num | 
+|    OR         | Ag,Fo,Fi         | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | | | num |
+
 ### ID
 
+| Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
+|---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
+|    ID      |    Ag,Fo,Fi      | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   2000-2016         | County - quarter or year       | den |
+|    ID         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
+|    ID         | Ag,Fo,Fi         |   ID OSHA       | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021 | state, year (4-year increments) | num |
+|    ID         | Ag,Fo,Fi         |   ID BLS        | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num | 
+|    ID         | Ag,Fo,Fi         |  DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | | | num
 
 ### AK
 
+| Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
+|---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
+
 ### State comparisons
 
-### Agriculture indicator survey links
+| Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
+|---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
 
+### Agriculture indicator survey links
+| Survey        | Description       | data             | years  | resolution  |
+|---------------|-------------------|------------------|--------|------------|
+|   National Children’s Center for Rural and Agricultural Health and Safety       |    Data are derived from publicly available reports, such as news media, social media, and obituaries for incidents in agriculture, commercial fishing, and forestry. Intentional and unintentional as well as occupational and non-occupational (e.g. visitors, agritourism) cases are included      | | | |
+|. |. |. |. |. |
+|. |. |. |. |. |
+|. |. |. |. |. |
+|. |. |. |. |. |
+|. |. |. |. |. |
+|. |. |. |. |. |
+
+### Alternative iundicators
+Financial
 
 
 ### New data to add to pre-existing numerator and denominator data tables?
