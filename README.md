@@ -12,7 +12,7 @@
 |    WA         | Ag,Fo,Fi          |   WA OSHA       | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021? | state, year (4-year increments) | num |
 |    WA         | Ag,Fo,Fi          |   WA BLS        | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num | 
 |    WA         | Ag,Fo,Fi          | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | | | num |
-|    WA         | Ag, H-2A         | DOL(NAWS)        | (National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data] | 1988-2018 | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf) | num/den | SAS, Excel, CSV |
+
 
 ### OR
 
@@ -23,7 +23,7 @@
 |    OR         | Ag,Fo,Fi         |   OR OSHA       | [Compensable fatalities per industry/occupation code](https://www.oregon.gov/dcbs/reports/protection/Pages/compensable-fatalities.aspx) | 2000-2021 | state, year (4-year increments) | num | |
 |    OR         | Ag,Fo,Fi         |   OR BLS        | [Census of Fatal Occupational Injuries](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | Yearly summary | num | 
 |    OR         | Ag,Fo,Fi         | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | | | num |
-|    OR         | Ag, H-2A         | DOL(NAWS)        | (National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data] | 1988-2018 | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf) | num/den | SAS, Excel, CSV |
+
 
 ### ID
 
@@ -34,7 +34,7 @@
 |    ID         | Ag,Fo,Fi         |   ID OSHA       | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021 | state, year (4-year increments) | num |
 |    ID         | Ag,Fo,Fi         |   ID BLS        | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num | 
 |    ID         | Ag,Fo,Fi         |  DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | | | num
-|    ID         | Ag, H-2A         | DOL(NAWS)        | (National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data] | 1988-2018 | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf) | num/den | SAS, Excel, CSV |
+
 
 ### AK
 
@@ -45,7 +45,7 @@
 |    AK         | Ag,Fo,Fi         |   AK OSHA       | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021? | state, year (4-year increments) | num |
 |    AK         | Ag,Fo,Fi         |   AK BLS        | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num | 
 |    AK         | Ag,Fo,Fi         |   DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | | | num |
-|    AK         | Ag, H-2A         | DOL(NAWS)        | (National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data] | 1988-2018 | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf) | num/den | SAS, Excel, CSV |
+
 
 ### State comparisons
 
@@ -55,7 +55,7 @@
 |    US         | Ag,Fo,Fi          |   OSHA           | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021? | state, year (4-year increments) | num |
 |    US         | Ag,Fo,Fi          |   ID BLS         | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num |
 |   US      |    Ag,Fo,Fi           | US census bureau |  [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=2&g=0)      | 2000-2016?           |  County - quarter or year    | den | Tables or PDF |
-
+|    US         | Ag, H-2A         | DOL(NAWS)        | (National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data] | 1988-2018 | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf) | num/den | SAS, Excel, CSV |
 
 ### Agriculture indicator survey links
 | Survey        |     data          | years            | Description  |resolution |
