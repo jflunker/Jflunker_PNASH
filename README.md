@@ -12,6 +12,7 @@
 |    WA         | Ag,Fo,Fi          |   WA OSHA       | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021? | state, year (4-year increments) | num |
 |    WA         | Ag,Fo,Fi          |   WA BLS        | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num | 
 |    WA         | Ag,Fo,Fi          | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | | | num |
+|    WA         | Ag,Fo,Fi          | WA Labor and Industries         | [Fatalities](https://www.lni.wa.gov/safety-health/preventing-injuries-illnesses/workplace-injuries-fatalities/#fatality-summaries|  | | | num |
 
 
 ### OR
