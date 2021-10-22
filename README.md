@@ -68,7 +68,7 @@ https://www.bls.gov/iif/state_archive.htm#ID
 |   National Children’s Center for Rural and Agricultural Health and Safety       |  https://www.cdc.gov/niosh/docs/2018-111/default.html        |  | Data are derived from publicly available reports, such as news media, social media, and obituaries for incidents in agriculture, commercial fishing, and forestry. Intentional and unintentional as well as occupational and non-occupational (e.g. visitors, agritourism) cases are included | |
 | Occupational Injury SUrveillance of Production Agriculture (OISPA) |https://www.cdc.gov/niosh/topics/aginjury/oispa/default.html |. |. |. |
 | Minority Farm Operator Occupational Injury Surveillance of Production Agriculture (M-OISPA) |https://www.cdc.gov/niosh/topics/aginjury/m-oispa/default.html |. |. |. |
-| Farm Safety Survey (FSS)|https://www.cdc.gov/niosh/topics/aginjury/fss/default.html |. | 2006, 2011 | no dusk mask questions, only resoirator |
+| Farm Safety Survey (FSS)|https://www.cdc.gov/niosh/topics/aginjury/fss/default.html |   | | no dusk mask questions, only resoirator |
 | National Agriculture Statistics Service (NASS)|https://www.nass.usda.gov/ |. |. |. |
 | National Agricultire Workers Survey (NAWS) |(National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data]| | 1999,2002-2004; 2008-2010; 2014-2015 | Hired crop workers >14 years of age | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf|
 |Childhood Agricultural Injury Survey (CAIS) |https://www.cdc.gov/niosh/topics/childag/cais/default.html |. |. |. |
