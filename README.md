@@ -6,15 +6,13 @@
 ### WA
 | Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
 |---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
-|    WA         |    Ag,Fo,Fi       | US census bureau |  [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   2000-2016         |  County - quarter or year  | den | |
-|    WA         |    Ag (H-2A)      | USDOL            | [ESD-WA](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | County | den |
-|    WA         |    Ag H-2A        |   DOL-OFLS       | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
-|    WA         | Ag,Fo,Fi          |   WA OSHA       | [Compensable fatalities per industry/occupation code] TBA | 2000-2021? | state, year (4-year increments) | num |
-|    WA         | Ag,Fo,Fi          |   WA BLS        | [Census of Fatal Occupational Injuries] TBA  | 2003-2019? | Yearly summary | num | 
-|    WA         | Ag,Fo,Fi          | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | | | num |
-|    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries         | [Fatalities](https://www.lni.wa.gov/safety-health/preventing-injuries-illnesses/workplace-injuries-fatalities/#fatality-summaries|  | | | num |
-|    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries         | [Non-fatal Injuries](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data| 2007-2019 | | |  |
-
+|    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries         | [Non-fatal Injuries](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data)| 2007-2019 | state per NAICS code | num, den| pdf |
+|    WA         | Ag,Fo,Fi          | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 2013-2019| state per NAICS code| num, den | xls |
+|    WA         |    Ag,Fo,Fi       | US census bureau |  [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   2000-2016         |  County - quarter or year  | den | pdf |
+|    WA         | Ag,Fo,Fi          |  WA Department of Labor and Industries        | [Fatalities](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/labor-statistics-blsi)| 2013-2019 | state, year (4-year increments) | num | pdf |
+|    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries         | [Fatalities summary table with descriptions](https://www.lni.wa.gov/safety-health/preventing-injuries-illnesses/workplace-injuries-fatalities/#fatality-summaries)| 2020-2021 | state, per industry| num | pdf |
+|    WA         |    Ag (H-2A)      | USDOL            | [ESD-WA](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | County | den | pdf |
+|    WA         |    Ag (H-2A)        |   DOL-OFLS       | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 
 ### OR
 
@@ -54,12 +52,12 @@
 | Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
 |---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
 |    US         | Ag,Fo,Fi          | DOL BLS          | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) |
-|    US         | Ag,Fo,Fi          |   OSHA           | [Compensable fatalities per industry/occupation code](TBA) | 2000-2021? | state, year (4-year increments) | num |
-|    US         | Ag,Fo,Fi          |   ID BLS         | [Census of Fatal Occupational Injuries](TBA) | 2003-2019? | Yearly summary | num |
-|   US      |    Ag,Fo,Fi           | US census bureau |  [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=2&g=0)      | 2000-2016?           |  County - quarter or year    | den | Tables or PDF |
+|    US         | Ag,Fo,Fi          |   BLS         | [Fatal Occupational Injuries](https://www.bls.gov/iif/oshstate.htm) | 2003-2019? | Yearly summary | num, den| pdf exl |
+|   US      |    Ag,Fo,Fi           | US census bureau |  [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=2&g=0)      | 1990-2020?           |  County - quarter or year, NAICS code   | den | Tables or PDF |
 |    US         | Ag, H-2A         | DOL(NAWS)        | (National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data] | 1988-2018 | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf) | num/den | SAS, Excel, CSV |
 |   US      |    Ag,Fo,Fi           | OSHA |  [Fatality Inspection Data](https://www.osha.gov/fatalities)      |       2017-2020   |  ?    | ? | Tables or PDF |
 |   US      |    Ag,Fo,Fi           | OSHA |  [Injury tracking Application](https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data)      |           |  2016-2020    | ? | Tables or PDF |
+
 
 
 ### Agriculture indicator survey links
@@ -70,7 +68,7 @@
 | Minority Farm Operator Occupational Injury Surveillance of Production Agriculture (M-OISPA) |. |. |. |. |
 | Farm Safety Survey (FSS)|. |. | 2006, 2011 | no dusk mask questions, only resoirator |
 | National Agriculture Safety Survey (NASS)|. |. |. |. |
-| National Agricultire Workers Survey (NAWS) |(National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data]| | 1999,2002-2004; 2008-2010; 2014-2015 | Hired crop workers >14 years of age |. |
+| National Agricultire Workers Survey (NAWS) |(National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data]| | 1999,2002-2004; 2008-2010; 2014-2015 | Hired crop workers >14 years of age | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf|
 |CAIS |. |. |. |. |
 |. |. |. |. |. |
 
