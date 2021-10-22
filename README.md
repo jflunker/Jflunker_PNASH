@@ -34,7 +34,7 @@
 |    ID        | Ag,Fo,Fi          | DOL BLS           | [Fatal Occupational Injuries](https://www.bls.gov/iif/state_archive.htm#ID) | 1992-2019 | Yearly summary per industry| num, den| pdf exl |
 |    ID         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 
-https://www.bls.gov/iif/state_archive.htm#ID
+
 
 ### AK
 
