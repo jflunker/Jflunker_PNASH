@@ -58,25 +58,25 @@ https://www.bls.gov/iif/state_archive.htm#ID
 |    US         | Ag,Fo,Fi          | DOL BLS           | [Fatal Occupational Injuries](https://www.bls.gov/iif/state_archive.htm#ID) | 1992-2019 | Yearly summary per industry| num, den| pdf exl |
 |   US      |    Ag,Fo,Fi           | OSHA |  [Fatality Inspection Data](https://www.osha.gov/fatalities)      |       1969-2021   |  state    | num | free text, Tables or PDF |
 |   US      |    Ag,Fo,Fi           | OSHA |  [Injury tracking Application](https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data)      |           |  2016-2020    | state, employer and worker specific  data | Tables or PDF |
-|    US         | Ag, H-2A         | DOL(NAWS)        | [National Agricultural Workers Survey](https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data) | 1988-2018 | [6 US regions, but state level by request?](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf) | num/den | SAS, Excel, CSV |
+|    US         | Ag, H-2A         | DOL(NAWS)        | [National Agricultural Workers Survey](https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data) | 1988-2018 | [6 US regions, but state level by request?](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf) | num, den | SAS, Excel, CSV |
 
 
 
 ### Agriculture indicator survey links
 | Survey        |     data          | years            | Description  |resolution |
 |---------------|-------------------|------------------|--------------|------------|
-|   National Children’s Center for Rural and Agricultural Health and Safety       |          |  | Data are derived from publicly available reports, such as news media, social media, and obituaries for incidents in agriculture, commercial fishing, and forestry. Intentional and unintentional as well as occupational and non-occupational (e.g. visitors, agritourism) cases are included | |
-| Occupational Injury SUrveillance of Production Agriculture (OISPA) |. |. |. |. |
-| Minority Farm Operator Occupational Injury Surveillance of Production Agriculture (M-OISPA) |. |. |. |. |
-| Farm Safety Survey (FSS)|. |. | 2006, 2011 | no dusk mask questions, only resoirator |
-| National Agriculture Safety Survey (NASS)|. |. |. |. |
+|   National Children’s Center for Rural and Agricultural Health and Safety       |  https://www.cdc.gov/niosh/docs/2018-111/default.html        |  | Data are derived from publicly available reports, such as news media, social media, and obituaries for incidents in agriculture, commercial fishing, and forestry. Intentional and unintentional as well as occupational and non-occupational (e.g. visitors, agritourism) cases are included | |
+| Occupational Injury SUrveillance of Production Agriculture (OISPA) |https://www.cdc.gov/niosh/topics/aginjury/oispa/default.html |. |. |. |
+| Minority Farm Operator Occupational Injury Surveillance of Production Agriculture (M-OISPA) |https://www.cdc.gov/niosh/topics/aginjury/m-oispa/default.html |. |. |. |
+| Farm Safety Survey (FSS)|https://www.cdc.gov/niosh/topics/aginjury/fss/default.html |. | 2006, 2011 | no dusk mask questions, only resoirator |
+| National Agriculture Statistics Service (NASS)|https://www.nass.usda.gov/ |. |. |. |
 | National Agricultire Workers Survey (NAWS) |(National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data]| | 1999,2002-2004; 2008-2010; 2014-2015 | Hired crop workers >14 years of age | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf|
-|CAIS |. |. |. |. |
+|Childhood Agricultural Injury Survey (CAIS) |https://www.cdc.gov/niosh/topics/childag/cais/default.html |. |. |. |
 |. |. |. |. |. |
 
-### Alternative iundicators
+### Alternative non-case indicators
 Financial
-
+Hospitalization
 
 ### New data to add to pre-existing numerator and denominator data tables?
 | Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
@@ -117,6 +117,9 @@ Financial
 | ID         | AgriMet | https://www.usbr.gov/pn/agrimet/agrimetmap/agrimap.html |
 | AK         | TBD     | 
 | USA (CONUS) | USPEST.org | https://uspest.org/US/ddmaps.html
+
+
+### Below are Eddie's original repo tables
 
 
 This page provides a brief [review of Agriculture, Forestry, and Fishing (AFF) surveillance efforts](#review-of-aff-surveillance-efforts) led by NIOSH and links to [data sources](#data-sources) useful for defining workforce population burden in the Pacific Northwest. This information might help teams address the "BNI" framework for project proposals using online query tools or [sharing R code](https://github.com/elaustin/Ag-Health-Indicators). We are currently trying to characterize stengths, limitations, and whether each source offers information about agriculture, forestry, and/or fishing. Please let Eddie (ejkasner@uw.edu) and Elena (elaustin@uw.edu) know about any missing datasets or data analysis support needs. 
