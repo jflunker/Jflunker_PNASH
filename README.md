@@ -56,8 +56,8 @@ https://www.bls.gov/iif/state_archive.htm#ID
 |    US         | Ag,Fo,Fi         | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 1994-2015 | state level | num | pdf |
 |    US         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |  2000-2016          | County - quarter or year      | den | tables |
 |    US         | Ag,Fo,Fi          | DOL BLS           | [Fatal Occupational Injuries](https://www.bls.gov/iif/state_archive.htm#ID) | 1992-2019 | Yearly summary per industry| num, den| pdf exl |
-|   US      |    Ag,Fo,Fi           | OSHA |  [Fatality Inspection Data](https://www.osha.gov/fatalities)      |       2017-2020   |  ?    | ? | Tables or PDF |
-|   US      |    Ag,Fo,Fi           | OSHA |  [Injury tracking Application](https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data)      |           |  2016-2020    | ? | Tables or PDF |
+|   US      |    Ag,Fo,Fi           | OSHA |  [Fatality Inspection Data](https://www.osha.gov/fatalities)      |       1969-2021   |  state    | num | free text, Tables or PDF |
+|   US      |    Ag,Fo,Fi           | OSHA |  [Injury tracking Application](https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data)      |           |  2016-2020    | state, employer and worker specific  data | Tables or PDF |
 |    US         | Ag, H-2A         | DOL(NAWS)        | [National Agricultural Workers Survey](https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data) | 1988-2018 | [6 US regions, but state level by request?](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf) | num/den | SAS, Excel, CSV |
 
 
