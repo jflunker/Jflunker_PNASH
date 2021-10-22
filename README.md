@@ -70,7 +70,7 @@ https://www.bls.gov/iif/state_archive.htm#ID
 | Minority Farm Operator Occupational Injury Surveillance of Production Agriculture (M-OISPA) |https://www.cdc.gov/niosh/topics/aginjury/m-oispa/default.html |. |. |. |
 | Farm Safety Survey (FSS)|https://www.cdc.gov/niosh/topics/aginjury/fss/default.html |   | | no dusk mask questions, only resoirator |
 | National Agriculture Statistics Service (NASS)|https://www.nass.usda.gov/ |. |. |. |
-| National Agricultire Workers Survey (NAWS) |(National Agricultural Workers Survey)[https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data]| | 1999,2002-2004; 2008-2010; 2014-2015 | Hired crop workers >14 years of age | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf|
+| National Agricultire Workers Survey (NAWS) |[National Agricultural Workers Survey](https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data)| | 1999,2002-2004; 2008-2010; 2014-2015 | Hired crop workers >14 years of age | [6 US regions](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf|
 |Childhood Agricultural Injury Survey (CAIS) |https://www.cdc.gov/niosh/topics/childag/cais/default.html |. |. |. |
 |. |. |. |. |. |
 
