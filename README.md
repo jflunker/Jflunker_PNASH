@@ -18,6 +18,7 @@
 
 | Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
 |---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
+|    OR         | Ag,Fo,Fi         |   OR BLS        | [Non-fatal Occupational Injuries](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | Yearly summary | num | pdf |
 |    OR         | Ag,Fo,Fi         | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 1994-2015 | state level | num, den | pdf |
 |    OR         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |  2000-2016          | County - quarter or year      | den | tables |
 |    OR         | Ag,Fo,Fi         |   OR BLS        | [Census of Fatal Occupational Injuries](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | Yearly summary | num | pdf |
