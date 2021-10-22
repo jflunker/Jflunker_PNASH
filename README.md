@@ -29,23 +29,22 @@
 
 | Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
 |---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
-|    ID      |    Ag,Fo,Fi      | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   2000-2016         | County - quarter or year       | den |
-|    ID         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
-|    ID         | Ag,Fo,Fi         |   ID OSHA       | [Compensable fatalities per industry/occupation code] TBA  | 2000-2021 | state, year (4-year increments) | num |
+|    ID         | Ag,Fo,Fi         | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 1994-2015 | state level | num | pdf |
+|    ID         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |  2000-2016          | County - quarter or year      | den | tables |
 |    ID         | Ag,Fo,Fi         |   ID BLS        | [Census of Fatal Occupational Injuries] TBA  | 2003-2019? | Yearly summary | num | 
-|    ID         | Ag,Fo,Fi         |  DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | | | num
+|    ID         | Ag,Fo,Fi         |   ID OSHA       | [Compensable fatalities per industry/occupation code] TBA  | 2000-2021 | state, year (4-year increments) | num |
+|    ID         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 
 
 ### AK
 
 | Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes |
 |---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
-|    AK      |    Ag,Fo,Fi      | US census bureau |  [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=2&g=0)      | 2000-2016?           |  County - quarter or year    | den | Tables or PDF |
-|    AK         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
-|    AK         | Ag,Fo,Fi         |   AK OSHA       | [Compensable fatalities per industry/occupation code] TBA  | 2000-2021? | state, year (4-year increments) | num |
+|    AK         | Ag,Fo,Fi         | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 1994-2015 | state level | num | pdf |
+|    AK         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |  2000-2016          | County - quarter or year      | den | tables |
 |    AK         | Ag,Fo,Fi         |   AK BLS        | [Census of Fatal Occupational Injuries] TBA  | 2003-2019? | Yearly summary | num | 
-|    AK         | Ag,Fo,Fi         |   DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | | | num |
-
+|    AK         | Ag,Fo,Fi         |   AK OSHA       | [Compensable fatalities per industry/occupation code] TBA  | 2000-2021? | state, year (4-year increments) | num |
+|    AK         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 
 ### State comparisons
 
