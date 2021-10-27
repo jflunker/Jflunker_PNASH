@@ -24,7 +24,7 @@
 |    OR         | Ag,Fo,Fi         |   OR BLS        | [Census of Fatal Occupational Injuries](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | Yearly summary | num | pdf |
 |    OR         | Ag,Fo,Fi         |   OR OSHA       | [Compensable fatalities per NAICS industry/occupation code](https://www.oregon.gov/dcbs/reports/protection/Pages/compensable-fatalities.aspx) | 2000-2021 | state, year  | num | pdf |
 |    OR         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
-|    OR         | Ag,Fo,Fi         |   OR Health Authority       | [Migrant and Seasonal Farmworker Enumeration Studies](https://www.oregon.gov/oha/HPA/HP-PCO/Pages/Migrant-Health.aspx) | 2002, 2013, 2018 | state, year  | num | pdf report |
+|    OR         | Ag,Fo,Fi         |   OR Health Authority       | [Migrant and Seasonal Farmworker Enumeration Studies](https://www.oregon.gov/oha/HPA/HP-PCO/Pages/Migrant-Health.aspx) | 2002, 2013, 2018 | state, year  | num, den| pdf report |
 
 
 
