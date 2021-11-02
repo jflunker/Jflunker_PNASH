@@ -68,7 +68,9 @@
 |   US      |    Ag,Fo,Fi           | OSHA |  [Injury tracking Application](https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data)      |           |  2016-2020    | state, employer and worker specific  data | Tables or PDF |
 |    US         | Ag, H-2A         | DOL(NAWS)        | [National Agricultural Workers Survey](https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data) | 1988-2018 | [6 US regions, but state level by request?](https://www.dol.gov/sites/dolgov/files/ETA/naws/pdfs/NAWS_6_Regions_Map.pdf) | num, den | SAS, Excel, CSV |
 |    US         | Fi               | NIOSH          | [US commercial fishing fatalities](https://www.cdc.gov/niosh/docs/2017-171/default.html) | 200-2009, 2010-2014 | Fatality by cause, fleet by year and incident type; 4 regions (AK, West, East, Gulf); Overview regional map of fatality locations | num, den, rates| pdf | Yearly trends by incident type 2000-2014; regional comparisons of rates 2005-2014 |
-https://www.cdc.gov/niosh/topics/fishing/nationaloverview.html
+|   US      |    Ag,Fo,Fi           | NIOSH |  [NIOSH Surveillance Initiatives](https://www.cdc.gov/niosh/topics/surveillance/data.html)    |    Varies       |  Varies    | Link to numerous occupation survellance databases | Tables, PDF, XLS | Ehaustive list of 30+ surveillance initiatives, 
+|   US      |    Ag,Fo,Fi           | NIOSH |  [Workers compensations summary](https://www.cdc.gov/niosh/topics/workercomp/cwcs/dashboard.html)      |     varies      |  varies    | Industry and yearly trends in US workers compensation claims  | Tables, PDF, figures, XLS | Trends over time per industry; qualitative compaison of wait times for benefits etc per state |
+
 
 ### Agriculture indicator survey links
 | Survey        |     data          | years            | Description  |resolution |
