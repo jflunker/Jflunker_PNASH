@@ -1,7 +1,8 @@
 # AFF Health Indicators
 
-### new tables
-### state tables
+### New tables to be added to master GitHub repository
+
+### State tables and US table
 
 ### WA
 | Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes | Strengths/Limitations |
