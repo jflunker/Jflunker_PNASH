@@ -13,7 +13,7 @@
 |    WA         | Ag,Fo,Fi          |  WA Department of Labor and Industries        | [Fatalities](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/labor-statistics-blsi)| 2013-2019 | state, year (4-year increments) | num | pdf |
 |    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries         | [Fatalities summary table with descriptions](https://www.lni.wa.gov/safety-health/preventing-injuries-illnesses/workplace-injuries-fatalities/#fatality-summaries)| 2020-2021 | state, per industry| num | pdf |
 |    WA         |    Ag (H-2A)      | USDOL            | [ESD-WA](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | County | den | pdf | Worker population and wages per county |
-|    WA         |    Ag (H-2A)        |   DOL-OFLS       | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
+|    WA         |    Ag (H-2A)        |   DOL-OFLS       | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF | County and industry must be manually extracted |
 
 
 
