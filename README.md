@@ -73,7 +73,7 @@
 | Survey        |     data          | years            | Description  |resolution |
 |---------------|-------------------|------------------|--------------|------------|
 |   National Children’s Center for Rural and Agricultural Health and Safety       |  https://www.cdc.gov/niosh/docs/2018-111/default.html        |  | Data are derived from publicly available reports, such as news media, social media, and obituaries for incidents in agriculture, commercial fishing, and forestry. Intentional and unintentional as well as occupational and non-occupational (e.g. visitors, agritourism) cases are included | |
-| Occupational Injury SUrveillance of Production Agriculture (OISPA) |https://www.cdc.gov/niosh/topics/aginjury/oispa/default.html |. |. |. |
+| Occupational Injury SUrveillance of Production Agriculture (OISPA) |https://www.cdc.gov/niosh/topics/aginjury/oispa/default.html | 2001, 2004, 2009, 2014  | Demographic and injury estimates |4 regions: NE, MW, S, W |
 | Minority Farm Operator Occupational Injury Surveillance of Production Agriculture (M-OISPA) |https://www.cdc.gov/niosh/topics/aginjury/m-oispa/default.html |. |. |. |
 | Farm Safety Survey (FSS)|https://www.cdc.gov/niosh/topics/aginjury/fss/default.html |   | | no dusk mask questions, only resoirator |
 | National Agriculture Statistics Service (NASS)|https://www.nass.usda.gov/ |. |. |. |
