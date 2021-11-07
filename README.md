@@ -30,7 +30,8 @@
 |    OR         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 |    OR         | Ag,Fo,Fi         |   OR Health Authority       | [Migrant and Seasonal Farmworker Enumeration Studies](https://www.oregon.gov/oha/HPA/HP-PCO/Pages/Migrant-Health.aspx) | 2002, 2013, 2018 | state, year  | num, den| pdf report |
 
-
+non-farm estimates for oregon (den)
+https://www.qualityinfo.org/ed-ceest/?at=1&t1=41010000000~0~0~00000000~2014~or
 
 
 ### ID
