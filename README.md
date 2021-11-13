@@ -7,7 +7,7 @@
 ### WA
 | Region        | Occupation (NAICS)| agency           | data   | years      | resolution  | Denominator/Numerator| Attributes | Strengths/Limitations |
 |---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|-------------|
-|    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries         | [Non-fatal Injuries](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data)| 2007-2020 summary| Body part, nature, injury, occupation per NAICS code | num, den| pdf | Not comparable with BLSI data |
+|    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries         | [Non-fatal Injuries](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/injury-data)| 2007-2020 summary| Body part, nature, injury, occupation per NAICS code | num | pdf | Not comparable with BLSI data |
 |    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries Bureau of Labor Statistics Information   | [BLSI](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/labor-statistics-blsi)| 2007-2019 per year | by industry within WA state per NAICS code | num, den| pdf | Not comparable with L & I claims data |
 |    WA         | Ag,Fo,Fi          | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 2013-2019| state per NAICS code| num, den | xls | Lacking county level resolution |
 |    WA         |    Ag,Fo,Fi       | US census bureau |  [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   1990-2020         |  County - quarter or year  | den | pdf |
