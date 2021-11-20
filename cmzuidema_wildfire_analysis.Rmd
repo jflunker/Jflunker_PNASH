@@ -1,0 +1,1297 @@
+---
+title: "Agricultural Worker Exposure to Wildfire-Related PM"
+subtitle: "focus on WA emergency rule"
+author: "Chris Zuidema"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    df_print: paged
+---
+
+
+# Setup
+
+knitr options, packages, helper functions, and directory organization.
+
+```{r setup, include=FALSE}
+#---- setup ----#
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+```{r clear.environment, eval=FALSE, echo=FALSE}
+#---- clear environment ----#
+
+# Clear workspace of all objects and unload all extra (non-base) packages
+rm(list = ls(all = TRUE))
+if (!is.null(sessionInfo()$otherPkgs)) {
+    res <- suppressWarnings(
+        lapply(paste('package:', names(sessionInfo()$otherPkgs), sep=""),
+               detach, character.only=TRUE, unload=TRUE, force=TRUE))
+  rm(res)
+}
+
+```
+
+```{r load.packages, echo=FALSE, message=FALSE}
+#---- load packages ----#
+
+# load pacman
+if (!require("pacman")) {install.packages("pacman")}
+
+# load the other packages, installing as needed.
+pacman::p_load(knitr, data.table, dplyr, readr, readxl, tidyr, stringr, purrr, 
+               ggplot2, tibble, ggmap, lubridate, broom, ggrepel, maps, egg, 
+               plotrix, housingData, scales, openair)
+```
+
+```{r helper.functions, include=FALSE}
+#---- helper functions ----#
+
+# save figures as ".png", ".jpg", or ".pdf" (and more) using ggsave
+# units can be specified as "in", "cm"
+save_fig <- function(name, fig = figs, save_to = analysis_type, size = fig_dims){
+  ggsave(filename = file.path(work_dir, paste0(save_to, "_output"), paste0(name,".png")), 
+         plot = fig[[name]], 
+         height = size[["height"]], width = size[["width"]],
+         units = "in", 
+         dpi = "retina")
+}
+
+
+# function to print every nth x-axis label
+every_nth_label <- function(x, n = 2){
+  x <- unique(as.character(x))
+  x[seq(n, length(x), n)] <- " "
+  x
+}
+
+```
+
+
+```{r directory.organization, echo=FALSE, warning=FALSE}
+#---- directory organization ----#
+
+# specify "all_wa" or "county_highlight"
+#analysis_type <- "county_highlight"
+analysis_type <- "all_wa"
+
+# specify dates of interest
+date_range <- as.Date(c("2011-01-01", "2020-12-31"))
+
+# specify counties of interest and set output figure dimensions (inches)
+if(analysis_type == "county_highlight") {
+  
+  counties <- c("Chelan", "Walla Walla", "Yakima")
+  fig_dims <- c(width = 7.5, height = 4)
+  y_axis_lim <- c(0, 200)
+  ax_by = 20
+
+} else {
+  
+  # for "all_wa" set figure dimensions & secondary axis  
+  counties <- ggplot2::map_data("county") %>%
+    filter(region == "washington") %>% 
+    pull(subregion) %>% 
+    unique() %>% 
+    str_to_title()
+  
+  fig_dims <- c(height = 10, width = 8)
+  y_axis_lim <- c(0, 200)
+  ax_by = 50
+  }
+
+# specify directories
+work_dir <- getwd()
+data_dir <- file.path(work_dir,"data")
+output_dir <- file.path(work_dir, paste0(analysis_type, "_output") )
+data_dir <- file.path(work_dir, "data")
+
+# create output directory if it does not already exist
+dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
+dir.create(data_dir, showWarnings = FALSE, recursive = TRUE)
+
+# create figure & table lists
+figs <- list()
+tbls <- list()
+
+```
+
+
+# WA Employment Security Division (ESD) data
+
+## Download 
+
+```{r download.WA.ESD.data, warning=FALSE}
+#---- download WA ESD data ----#
+
+# data from QWEC
+
+# parent URL: https://esd.wa.gov/labormarketinfo/covered-employment 
+# URL for document library: https://esd.wa.gov/labormarketinfo/report-library
+
+
+# create directory if needed
+new_dir <- file.path(data_dir, "ESD_QCEW")
+dir.create(new_dir, showWarnings = TRUE, recursive = TRUE)
+
+# specify base URL and build full URLs
+url_base <- "https://esdorchardstorage.blob.core.windows.net/esdwa/Default/ESDWAGOV/labor-market-info/Libraries/Industry-reports/QCEW/"
+url <- c(paste0(url_base,
+            c("2002%20annual%20averges.xls", 
+              paste0(seq(2003, 2004), "%20annual%20averages.xls"), 
+              paste0("QCEW-annual-averages-", seq(2005, 2007), "-revised.xls"), 
+              "qcew%20annual%20average%202008%20revised.xls", 
+              "qcew%20annual%20averages%202009%20revised.xlsx", 
+              "qcew%20annual%20averages%202010%20revised2.xlsx", 
+              "Copy%20of%20qcew-annual-averages-2011-revised1.xlsx",
+              paste0("qcew-annual-averages-", seq(2012, 2015), "-revised.xls"),
+              paste0("qcew-annual-averages-", seq(2016, 2017), "-revised.xlsx"), 
+              "qcew-annual-averages-2018-revised.xls",
+              "qcew-annual-averages-2019-revised.xlsx", 
+              "qcew-annual-averages-2020-revised.xlsx"
+            )))
+
+# make dataframe with url & filename
+url_filename <- tibble(url = url, 
+                       file_name = c(paste0("qcew_", seq(2002, 2008), ".xls"), 
+                                     paste0("qcew_", seq(2009, 2011), ".xlsx"),
+                                     paste0("qcew_", seq(2012, 2015), ".xls"), 
+                                     paste0("qcew_", seq(2016, 2017), ".xlsx"), 
+                                     "qcew_2018.xls", 
+                                     paste0("qcew_", seq(2019, 2020), ".xlsx")
+                                     ) )
+
+# download files
+apply(url_filename, 1, function(i){
+  
+  # specify destination
+  dest <- file.path(new_dir, i[["file_name"]])
+  
+  # download if not already present
+  if(!file.exists(dest)){download.file(url = i[["url"]], destfile = dest, mode = "wb")}
+  })
+
+```
+
+## Wrangle
+
+```{r wrangle.WA.ESD.data, message=FALSE, warning=FALSE}
+#---- wrangle WA ESD data ----#
+
+# read excel files
+file_name <- list.files(file.path(data_dir, "ESD_QCEW"))
+
+esd_wide <- file_name %>% set_names(str_remove_all(., "qcew_|.xlsx|.xls")) %>% 
+  purrr::map(function(i){
+  
+    county <- paste(counties, "County")
+    
+    county %>% set_names(str_remove(., " County")) %>% purrr::map(function(j){
+      
+      path <- file.path(new_dir, i)
+      
+        # get the number of rows to skip
+        skip_rows <- read_excel(path, sheet = j, col_types = "text") %>% 
+          pull(1) %>% 
+          str_detect(pattern = "11") %>% 
+          which()
+        
+        # specify column names
+        col_names <- c("two_digit", "three_digit", "Industry", "avg_firms",
+                       month.abb, "wages_paid", "avg_annual_workers")
+        
+        # read a second time, skipping rows, naming columns, and filtering to NAICS = 11
+        read_excel(path, sheet = j, skip = skip_rows, col_types = "text", col_names = FALSE) %>% 
+          rename(col_name = 1:18) %>% 
+          select(contains("col_name")) %>% 
+          set_names(col_names) %>% 
+          fill(two_digit, .direction = "down") %>% 
+          filter(two_digit == "11", Industry != "Other industries") %>% 
+          drop_na(Industry)
+      
+  }) %>% bind_rows(.id = "county")
+}) %>% bind_rows(.id = "Year")
+
+# create long dataframe
+esd <- esd_wide %>% 
+  pivot_longer(cols = Jan:Dec, names_to = "Month", values_to = "Workers") %>% 
+  mutate(Date = as.Date(paste(Year, Month, "01", sep = "-"), format = "%Y-%B-%d"), 
+         Workers = as.numeric(Workers)/1000, 
+         Month = factor(Month, levels = month.abb, ordered = TRUE), 
+         across(c(Year, avg_firms, wages_paid, avg_annual_workers), as.numeric) 
+         )
+
+# subset ESD data to the "parent" industry for each county
+esd_sub <- esd %>% 
+  filter(between(Date, date_range[1], date_range[2]), 
+         Industry == "Agriculture, forestry, fishing and hunting")
+
+# average by month
+esd_month <- esd_sub %>% 
+  group_by(Month, county) %>% 
+  mutate(county_month_avg = mean(Workers, na.rm = TRUE) ) %>% 
+  group_by(county) %>% 
+  mutate(min_avg = min(county_month_avg) , 
+         Workers_percent = ((county_month_avg-min_avg)/min_avg*100) ) %>% 
+  distinct(county, Month, Workers_percent) %>% 
+  ungroup() %>% 
+  select(Month, county, Workers_percent) %>% 
+  mutate(Group = "Agricultural Workers")
+
+```
+
+
+## Plot
+
+Monthly estimates from WA ESD by county broken down by 2- and 3-digit NAICS
+codes.
+
+```{r plot.monthly.WA.ESD.data}
+#---- plot monthly WA ESD data ----#
+
+facet_scales <- case_when(analysis_type == "county_highlight" ~ "fixed", 
+                          analysis_type == "all_wa" ~ "free_y")
+
+# Create timeseries
+figs[["ESD_ts_month"]] <- ggplot(data = esd %>% drop_na(Workers)) +
+  
+  # add lines
+  geom_line(aes(x = Date, y = Workers, color = Industry) ) +
+  
+  facet_wrap(~county, scales = facet_scales) +
+  
+  # add labels
+  labs(title = " ", 
+       x = " ", 
+       y = "Thousands of Workers") +
+  
+  # specify theme
+  scale_color_brewer(palette = "Dark2") +
+  theme_bw(base_size = 11) +
+  
+  # theme options
+  theme(legend.position ="bottom", 
+        legend.box = "vertical", 
+        axis.title.x = element_blank() ) + 
+  guides(color = guide_legend(ncol = 2, byrow = TRUE), 
+         x = guide_axis(angle = 90) )
+
+# show and save figure
+figs[["ESD_ts_month"]]
+save_fig("ESD_ts_month")
+
+```
+
+
+## All WA ESD
+
+```{r all.wa.esd}
+#---- all wa esd ----#
+
+# read in statewide data
+wa_esd <- file_name %>% set_names(str_remove_all(., "qcew_|.xlsx|.xls")) %>% 
+  purrr::map(function(i){
+    
+    # specify path
+    path <- file.path(new_dir, i)
+    
+    # get tab name of interest
+    tab_name <- excel_sheets(path) %>% 
+      str_extract("^Statewide$|(Statewide 6 digit NAICS)" ) %>% 
+      purrr::discard(is.na)
+    
+    # get the number of rows to skip
+    skip_rows <- read_excel(path, sheet = tab_name, col_types = "text") %>% 
+      pull(1) %>% 
+      str_detect(pattern = "^11$|^111$") %>% 
+      which()
+    
+    # get dataframe dimensions for column names
+    number_cols <- read_excel(path, sheet = tab_name, col_types = "text") %>% 
+      ncol()
+    
+    # specify column names based on year and dataframe width
+    if(str_detect(i, "2005|2006")) {
+      col_names <- c("two_digit", "three_digit", "six_digit", "Industry", "avg_firms", 
+                     month.abb, "wages_paid", "avg_annual_workers", "q1_w", 
+                     "q2_w", "q3_w", "q4_w", "q1_f", "q2_f", "q3_f", "q4_f")
+      
+    } else if (number_cols == 22) {
+      col_names <- c("three_digit", "six_digit", "Industry", "avg_firms", 
+                     month.abb, "wages_paid", "avg_annual_workers", "q1_w", 
+                     "q2_w", "q3_w", "q4_w") 
+      
+    } else if (number_cols == 27) {
+      col_names <- c("three_digit", "six_digit", "Industry", "avg_firms", 
+                     month.abb, "wages_paid", "avg_annual_workers", "q1_w", "q2_w", 
+                     "q3_w", "q4_w", "empty", "q1_f", "q2_f", "q3_f", "q4_f") 
+      
+    } else if (number_cols == 28) {
+      col_names <- c("two_digit", "three_digit", "six_digit", "Industry", "avg_firms", 
+                     month.abb, "wages_paid", "avg_annual_workers", "avg_wage", 
+                     "q1_w", "q2_w", "q3_w", "q4_w", "q1_f", "q2_f", "q3_f", "q4_f")
+      
+    } else if (number_cols == 29) {
+      col_names <- c("two_digit","three_digit", "six_digit", "Industry", "avg_firms", 
+                     month.abb, "wages_paid", "avg_annual_workers", "avg_wage", "avg_wk_wage", 
+                     "q1_w", "q2_w", "q3_w", "q4_w", "q1_f", "q2_f", "q3_f", "q4_f")
+    }
+    
+    # read and filter to NAICS = 11
+    read_excel(path, sheet = tab_name, skip = skip_rows, col_types = "text", col_names = FALSE) %>%
+      set_names(col_names) %>%
+      fill(three_digit, .direction = "down") %>%
+      filter(str_detect(three_digit, "^11.$"), Industry != "Other industries") %>%
+      drop_na(Industry) %>% 
+      select(three_digit, six_digit, Industry, Jan:Dec, avg_firms, avg_annual_workers) 
+      
+    }) %>% 
+  bind_rows(.id = "Year") %>% 
+  mutate(across(c(Year, three_digit, six_digit, Jan:avg_annual_workers), as.integer), 
+         Industry = str_to_title(Industry))
+
+
+# example plot with 2-digit NAICS
+wa_esd %>% 
+  filter(Industry %in% c("Crop Production", "Animal Production")) %>% 
+  pivot_longer(Jan:Dec, names_to = "month", values_to = "workers") %>% 
+  mutate(date = as.Date(paste(Year, month, "15", sep = "-"), format = "%Y-%b-%d")) %>% 
+  
+  ggplot() + 
+    geom_line(aes(x = date, y = workers, color = Industry)) + 
+    theme_bw() + 
+    scale_color_brewer(palette = "Dark2") +
+    theme(legend.position = "bottom")
+
+```
+
+
+# NAICS codes
+
+```{r NAICS.six.digit.codes, warning=FALSE}
+#-----NAICS six.digit.codes ----#
+
+# read latest QWEC file, statewide data 
+file_name <- file.path(data_dir, "ESD_QCEW", "qcew_2020.xlsx")
+
+naics_six <- read_excel(file_name, 
+                        sheet = "Statewide 6 digit NAICS", 
+                        skip = 4 
+                        ) %>% 
+  fill(`2-digit NAICS`, .direction = "down") %>%
+  filter(`2-digit NAICS` == "11")
+
+
+total <- naics_six %>% 
+  filter(`Industry description` == "Agriculture, forestry, fishing and hunting") %>% 
+  pull(`Average annual employment`) %>% 
+  as.numeric()
+
+tbls[["naics_top"]] <- naics_six %>% 
+  select(`2-digit NAICS`, `3-digit NAICS`, `6-digit NAICS`, 
+         Industry = `Industry description`, Firms = `Average Firms`, 
+         Workers = `Average annual employment` ) %>% 
+  mutate(across(c(Firms, Workers, `2-digit NAICS`, `3-digit NAICS`, `6-digit NAICS`,), as.numeric), 
+         Percent = round(Workers/total*100, 1), 
+         NAICS = case_when(Industry == "Construction" ~ 23, 
+                           is.na(`6-digit NAICS`) ~ `3-digit NAICS`, 
+                           !is.na(`6-digit NAICS`) ~ `6-digit NAICS`)) %>%
+  arrange(NAICS)
+
+tbls[["naics_top"]]
+
+```
+
+
+# EPA AQS data
+
+## Download & wrangle
+
+```{r EPA.AQS.data, message=FALSE, warning=FALSE}
+#---- EPA.AQS.data ----#
+
+# download EPA AQS data if it does not already exist
+
+# create directory
+new_dir <- file.path(data_dir, "AQS_PM")
+dir.create(new_dir, showWarnings = FALSE, recursive = TRUE)
+
+# data location url
+# parent website: https://aqs.epa.gov/aqsweb/airdata/download_files.html
+#url <- https://aqs.epa.gov/aqsweb/airdata/hourly_88101_2020.zip
+
+# specify years and parameters of interest
+yrs <- seq(year(date_range[1]), year(date_range[2]))
+params <- c(FRM = 88101, non_FRM = 88502)
+yr_param <- expand.grid(yr = yrs, param = params)
+
+
+# load aqs list if available, otherwise download & create list
+if (file.exists(file.path(new_dir, "aqs_list.rdata"))){
+
+  load(file.path(new_dir, "aqs_list.rdata")) 
+  print("AQS list loaded from disk")
+
+} else {
+  
+  # create list of AQS data
+  aqs_list <- lapply(seq(nrow(yr_param)), function(i){
+    
+    # build URL
+    url <- paste0("https://aqs.epa.gov/aqsweb/airdata/hourly_", 
+                  yr_param$param[i], "_", 
+                  yr_param$yr[i], 
+                  ".zip")
+    
+    # specify zip and csv file text
+    zip_txt <- paste0("hourly_", yr_param$param[i], "_", yr_param$yr[i], ".zip")
+    dest <- file.path(new_dir, zip_txt)
+    csv_txt <- str_replace(dest, "zip", "csv") 
+    
+    # download the data if not already present
+    if (!file.exists(csv_txt)){ 
+      
+      # download, unzip & delete zip file
+      download.file(url, destfile = dest)
+      unzip(zipfile = file.path(new_dir, zip_txt), exdir = new_dir)
+      unlink(dest, recursive = FALSE) 
+    }
+    
+    # read CSV and filter to WA
+    fread(csv_txt) %>% 
+      filter(`State Name` == "Washington") 
+    
+  })
+  
+  # save list for convenience later
+  save(aqs_list, file = file.path(new_dir, "aqs_list.rdata") )
+}
+
+```
+
+
+```{r modify.AQS.PM.data, warning=FALSE}
+#---- modify AQS PM data ----#
+
+# create AQS dataframe
+# NOTE: several datetimes fail to parse because of daylight savings (i.e. 2:00 AM), 
+# dropped for now because there are so few. 
+aqs_hourly <- aqs_list %>% 
+  bind_rows() %>%
+  as_tibble() %>% 
+  filter(between(year(`Date Local`), range(yrs)[1], range(yrs)[2])) %>%
+  select(date_local = `Date Local`, time_local = `Time Local`, site_num = `Site Num`, 
+         county = `County Name`, latitude = Latitude, longitude = Longitude, 
+         param_name = `Parameter Name`, PM2.5 = `Sample Measurement` 
+         ) %>% 
+  filter(county %in% counties) %>% 
+  mutate(date_local = as.Date(date_local), 
+         datetime = ymd_hm(paste(date_local, time_local), tz = "US/Pacific") 
+         ) %>% 
+  drop_na(datetime) %>%
+  group_by(date_local, time_local, datetime, county) %>% 
+  summarise(PM2.5 = mean(PM2.5, na.rm = TRUE), .groups = "drop") %>%
+  mutate(Year = year(as.Date(date_local)),
+         month = month(as.Date(date_local)),
+         Month = month(month, label = TRUE),
+         year_month = format(as.Date(date_local), format = "%b-%Y"),
+         mid_month = as.Date(paste(Year, month, "15", sep = "-"))
+         ) %>%
+  right_join(expand_grid(county = counties, 
+                         datetime = seq(as.POSIXct(paste(date_range[1], "00:00:00")), 
+                                        as.POSIXct(paste(date_range[2], "23:00:00")), 
+                                        by = "hour") ), 
+            by = c("county", "datetime") 
+            ) %>% 
+  arrange(datetime)
+
+# create dataframes counting hours above PM2.5 thresholds
+## daily
+above_thresholds_daily <- aqs_hourly %>% 
+  mutate(above_20.5 = PM2.5 > 20.5, 
+         above_55.5 = PM2.5 > 55.5) %>% 
+  group_by(county, month, Month, year_month, mid_month, date_local) %>% 
+  summarise(PM2.5 = mean(PM2.5, na.rm = TRUE),
+            hours_above_20.5 = sum(above_20.5),
+            hours_above_55.5 = sum(above_55.5), 
+            .groups = "drop") 
+
+## monthly
+above_thresholds_monthly <- above_thresholds_daily %>% 
+  group_by(county, month, Month, year_month, mid_month) %>% 
+  summarise(PM2.5 = mean(PM2.5, na.rm = TRUE),
+            hours_above_20.5 = sum(hours_above_20.5),
+            hours_above_55.5 = sum(hours_above_55.5), 
+            .groups = "drop") %>% 
+  mutate(percent_above_20.5 = hours_above_20.5/(days_in_month(mid_month)*24)*100,
+         percent_above_55.5 = hours_above_55.5/(days_in_month(mid_month)*24)*100 )
+
+
+# subset to unique sites to get location information
+lat_long <- aqs_list %>% 
+  bind_rows() %>% 
+  as_tibble() %>%
+  select(site = `Site Num`, county_name = `County Name`, 
+           latitude = Latitude, longitude = Longitude) %>% 
+  filter(county_name %in% counties) %>% 
+  mutate(latitude = round(latitude, 6), 
+         longitude = round(longitude, 6) 
+         ) %>%
+  distinct() %>% 
+  arrange(site)
+
+```
+
+
+## Timeseries
+
+```{r plot.hourly.AQS.data, warning=FALSE}
+#-----plot hourly AQS data------
+
+# NOTE: this plot isn't super informative... may consider deleting entirely
+
+# plot hourly AQS data in timeseries
+figs[["AQS_hourly"]] <- ggplot(data = aqs_hourly, aes(x = datetime, y = PM2.5)) + 
+  
+  # points for each county
+  geom_point(shape = "o", size = 1) + 
+  facet_wrap(~county) +
+  
+  # lines for thresholds
+  geom_hline(yintercept = 20.5, color = "darkblue") + 
+  geom_hline(yintercept = 55.5, color = "darkred") + 
+  
+  # add labels
+  labs(x = "Date", 
+       y = expression(paste("PM2.5"," (",mu,"g/m"^{3},")"))
+       ) +
+  
+  # specify theme 
+  theme_bw()
+
+# show plot
+figs[["AQS_hourly"]]
+
+```
+
+
+## Two-year periods
+
+```{r PM.by.month.two.yr}
+#---- PM by month two yr ----#
+
+# make year breaks and labels for 2-yr plots
+yr_breaks <- c(-Inf, seq(2012, 2020, by = 2) )
+yr_labels <- c("2011-2012", "2013-2014", "2015-2016", "2017-2018", "2019-2020")
+
+# create a new dataframe for ggplot
+aqs_temp <- aqs_hourly %>% 
+  group_by(county) %>%
+  mutate(yr_group = Year %>% cut(breaks = yr_breaks, labels = yr_labels) ) %>% 
+  drop_na(PM2.5)
+
+# initialize figure
+figs[["AQS_PM_bymonth_2yr"]] <- ggplot(data = aqs_temp, aes(x = Month, y = PM2.5)) + 
+  
+  # boxplots of Daily PM
+  geom_boxplot(outlier.shape = "o", outlier.size = 1) +
+  facet_grid(rows = vars(county), cols = vars(yr_group)) +
+  
+  # labels
+  labs(y = expression(paste("PM"[2.5], " (",mu,"g/m"^{3},")")) ) + 
+  
+  # x axis
+  scale_x_discrete(breaks = c("Jan", "Mar", "May", "Jul", "Sep", "Nov") ) +
+
+  # theme
+  theme_bw() +
+  theme(legend.position = "bottom") + 
+  guides(x = guide_axis(angle = 90) ) +
+  theme(axis.title.x = element_blank() )
+
+# show plot  
+figs[["AQS_PM_bymonth_2yr"]]
+
+```
+
+
+## Calendar Plots
+
+```{r calendar.plots, warning=FALSE}
+#---- calendar plots ----#
+
+# make wrapper for calendarPlot function
+calendar_plot <- function(df = above_thresholds_daily, yr){
+  
+  df %>% 
+  rename(date = date_local) %>% 
+  filter(year(date) == yr) %>%
+  drop_na(PM2.5) %>% 
+  mutate(hours_above_20.5 = if_else(hours_above_20.5 == 0, 0.001, as.double(hours_above_20.5)), 
+         hours_above_55.5 = if_else(hours_above_55.5 == 0, 0.001, as.double(hours_above_55.5)) 
+         ) %>%
+  split(.$county) %>% 
+  purrr::map(~calendarPlot(mydata = ., 
+                           pollutant = "hours_above_20.5", 
+                           year = yr, 
+                           statistic = "sum", 
+                           limits = c(0, 24), 
+                           key.header = "Hours above threshold", 
+                           key.position = "bottom",
+                           main = paste(unique(.$county))
+                           ) 
+             )
+}
+
+
+# run function
+# NOTE: calendar plots not currently saved to output directory.
+calendar_plots <- calendar_plot(yr = 2020)
+
+```
+
+
+## Tallies above thresholds
+
+This first table tallies days with hours over the thresholds for the entire
+10-year period, then breaks down the days above the 55.5 ug/m3 threshold by
+month.
+
+```{r exceed.threshold.ten.year}
+#---- exceed threshold ten years ----#
+
+# set duration for counting (i.e., how many hours above threshold before it "counts")
+duration <- 1
+
+# count number of days each county exceeds thresholds for each month over date_range
+exceed_threshold_ten_yr_by_month <- above_thresholds_daily %>% 
+  mutate(day_above_20.5 = if_else(hours_above_20.5 >= duration, 1, 0), 
+         day_above_55.5 = if_else(hours_above_55.5 >= duration, 1, 0)) %>% 
+  group_by(Month, county) %>% 
+  summarise(days_above_20.5 = sum(day_above_20.5), 
+            days_above_55.5 = sum(day_above_55.5), 
+            .groups = "drop") %>% 
+  drop_na()
+  
+  
+# number of days that exceed thresholds for each county
+exceed_threshold_ten_yr <- exceed_threshold_ten_yr_by_month %>% 
+  group_by(county) %>% 
+  summarise(days_above_20.5 = sum(days_above_20.5), 
+            days_above_55.5 = sum(days_above_55.5), 
+            .groups = "drop")
+
+
+# combined table including days out of the 10 yr period total & by month; 
+# for now count days above 1 threshold only
+tbls[["aqs_summary_ten_yr"]] <- list(
+     
+    exceed_threshold_ten_yr, 
+    
+    exceed_threshold_ten_yr_by_month %>% 
+      select(Month, county, days_above_55.5) %>% 
+      pivot_wider(names_from = Month, values_from = days_above_55.5)
+    
+  ) %>% 
+  reduce(left_join, by = "county")
+
+tbls[["aqs_summary_ten_yr"]]
+
+```
+
+This second table chooses 1 year, and tallies days with hours above the
+thresholds, then breaks those days down by month for the 55.5 ug/m3 threshold.
+
+```{r exceed.threshold.one.year, message=FALSE}
+#---- exceed threshold one year ----#
+
+# specify year
+yr <- 2020
+
+# subset esd data to year
+esd_one_yr <- esd_sub %>% 
+  filter(Year == yr, 
+         Industry == "Agriculture, forestry, fishing and hunting") %>% 
+  mutate(Workers = avg_annual_workers) %>% 
+  distinct(Year, county, Workers)
+
+
+# count number of days each county exceeds thresholds for each month in `yr`
+exceed_threshold_one_yr_by_month <- above_thresholds_daily %>% 
+  filter(year(date_local) == yr) %>%
+  mutate(day_above_20.5 = if_else(hours_above_20.5 >= duration, 1, 0), 
+         day_above_55.5 = if_else(hours_above_55.5 >= duration, 1, 0)) %>% 
+  group_by(Month, county) %>% 
+  summarise(days_above_20.5 = sum(day_above_20.5), 
+            days_above_55.5 = sum(day_above_55.5), 
+            .groups = "drop") %>% 
+  drop_na()
+
+
+# number of days that exceed thresholds for each county in `yr`
+exceed_threshold_one_yr <- exceed_threshold_one_yr_by_month %>% 
+  group_by(county) %>% 
+  summarise(days_above_20.5 = sum(days_above_20.5), 
+            days_above_55.5 = sum(days_above_55.5), 
+            .groups = "drop")
+
+
+tbls[["aqs_worker_county_summary_one_yr"]] <- list(
+    esd_one_yr, 
+    exceed_threshold_one_yr,
+    exceed_threshold_one_yr_by_month %>% 
+      select(Month, county, days_above_55.5) %>% 
+      pivot_wider(values_from = days_above_55.5, names_from = Month)
+  ) %>% 
+  reduce(left_join) %>% 
+  mutate(n_respirators = Workers*days_above_55.5) 
+
+tbls[["aqs_worker_county_summary_one_yr"]]
+
+# sum number of respirators needed
+paste("Estimated additional respirator demand:", 
+      sum(tbls$aqs_worker_county_summary_one_yr$n_respirators, na.rm = TRUE) )
+
+```
+
+
+## Map: workers & AQS locations
+
+This map has worker numbers for one year.
+
+```{r map.workers.aqs}
+#---- map workers aqs ----#
+
+# state data from `maps` package
+state <- map_data("state") %>% 
+  filter(region == "washington")
+
+# county data
+county_boundaries <- map_data("county") %>%
+  filter(region == "washington",
+         subregion %in% tolower(counties)
+         ) %>% 
+  mutate(county = str_to_title(subregion)) %>%
+  left_join(esd_one_yr %>% mutate(Workers = Workers/1000), by = "county") %>% 
+  mutate(workers_disc = cut(Workers, boundary = 0,
+                            breaks = c(0, 0.5, 1, 5, seq(10, 50, by = 10) ) 
+                            #breaks = c(0, 1, seq(10, 80, by = 10) )
+                            ))
+
+# get county names and good lat/longs from `housingData` package 
+county_labels <- geoCounty %>% 
+  filter(state =="WA") %>% 
+  mutate(county_name = str_remove(county, " County"))
+
+
+# map
+figs[["workers_monitor_map"]] <- ggplot() +
+  
+  # plot counties
+  geom_polygon(data = county_boundaries,
+               aes(x = long, y = lat, group = group, fill = workers_disc),
+               color = "black") +
+  
+  # add monitor location points
+  geom_point(data = lat_long, aes(longitude, latitude), 
+             pch = 21, color = "black", fill = "yellow", size = 2) + 
+  
+  # add county labels
+  geom_text(data = county_labels, aes(label = county_name, x = lon, y = lat), 
+            size = 3) +
+  
+  # color ramp title and color
+  labs(fill = "Agricultural\nWorkers\n(thousands)") + 
+  scale_fill_brewer(type = "seq", palette = "Blues") +   # Dark2
+  
+  # map coordinates formatting
+  coord_quickmap() +
+  
+  # specify theme
+  theme_void()
+
+figs[["workers_monitor_map"]]
+save_fig("workers_monitor_map", size = c(width = 7.5, height = 4) )
+
+```
+
+
+# Combined Analysis
+
+## PM and employment
+
+### Timeseries 
+
+This first plot shows boxplots of hourly PM2.5 concentration (grouped by month)
+with monthly worker estimates (in thousands). Not the best figure, kept for
+internal consideration and becuase it shows outliers somewhat helpfully.
+
+```{r plot.PM.and.employment, message=FALSE, warning=FALSE}
+#---- plot PM and employment ----#
+
+# specify axis limits
+ylim_prim <- c(0, 500)   
+ylim_sec <- c(0, 50)
+
+# calculate scaling factors
+b <- diff(ylim_prim)/diff(ylim_sec)
+a <- b*(ylim_prim[1] - ylim_sec[1])
+
+
+figs[["AQS_ESD"]] <- ggplot() + 
+  
+  # boxplots of Daily PM
+  geom_boxplot(data = aqs_hourly,
+               aes(x = mid_month, y = PM2.5, group = mid_month),
+               outlier.shape = 1 ) +
+
+  # lines of monthly employment
+  geom_line(data = esd_sub, aes(x = Date, y = (a+Workers*b)), colour = "blue") +
+
+  facet_wrap(~county) +
+  
+  # legend
+  scale_color_manual(values = c("blue", "red"),
+                    name="Monthly",
+                    breaks= c("Agricultural Workers", "PM 2.5"),
+                    labels = c("Agricultural Workers", "PM 2.5")
+                    ) +
+  
+  # labels
+  labs(#title = " ", 
+       x = " ", 
+       y = expression(paste("PM"[2.5]," (",mu,"g/m"^{3},")"))
+       ) +
+  
+  # scale limits
+  scale_x_date(breaks = seq(date_range[1], date_range[2], by = "year"),
+               labels = year(seq(date_range[1], date_range[2], by = "year")),
+               expand = expand_scale(mult = c(0.05, 0.05))) +
+  
+  scale_y_continuous(limits = c(ylim_prim[1], ylim_prim[2]), expand = c(0,0),
+                     breaks = seq(ylim_prim[1], ylim_prim[2], by = 10),
+                     sec.axis = sec_axis(trans = ~ (. - a)/b,
+                                         breaks = seq(ylim_sec[1], ylim_sec[2], by = 10),
+                                         name = "Thousands of Workers")
+                     ) +
+  
+  # theme
+  theme_bw() +
+  theme(legend.position = "none") + 
+  guides(x = guide_axis(angle = 90) ) +
+  theme(#axis.text.x = element_text(angle = 90) , 
+        axis.line.y.right = element_line(color = "blue"), 
+        axis.ticks.y.right = element_line(color = "blue"),
+        axis.text.y.right = element_text(color = "blue"), 
+        axis.title.y.right = element_text(color = "blue")
+        ) 
+  
+# show plot  
+figs[["AQS_ESD"]]
+
+```
+
+
+### Monthly averages
+
+Next, hourly PM2.5 concentrations for the 10-yr period are aggregated by month
+for boxplots and worker numbers are averaged by month over the 10-yr period,
+then normalized to the month with the lowest average number of workers to get
+the "average percent change in workers."
+
+```{r employment.and.PM.by.month, warning=FALSE}
+#---- employment and PM by month ----#
+
+# create a new dataframe for ggplot
+df <- bind_rows( 
+  esd_month %>% rename(Measure = Workers_percent),
+  aqs_hourly  
+  ) %>% 
+  drop_na(Month)
+
+# specify axis limits
+ylim_prim <- c(0, 500)  #c(0, 200)   
+ylim_sec <- y_axis_lim
+
+# calculate scaling factors
+b <- diff(ylim_prim)/diff(ylim_sec)
+a <- b*(ylim_prim[1] - ylim_sec[1])
+
+
+# initialize figure
+figs[["AQS_ESD_bymonth"]] <- ggplot() + 
+  
+  # boxplots of daily PM
+  geom_boxplot(data = aqs_hourly %>% drop_na(Month), 
+               aes(x = Month, y = PM2.5), 
+               outlier.shape = "o", outlier.size = 1, outlier.alpha = 0.5) +
+  
+  # lines and points of monthly employment
+  geom_line(data = esd_month %>% filter(Group == "Agricultural Workers"), 
+            aes(x = Month, y = (a+Workers_percent*b), group = Group, colour = Group)) +
+  
+  facet_wrap(~county) +
+
+  # legend (shape and color to link/match)
+  scale_color_manual(values = c("blue", "black"),
+                     name ="Monthly Averages",
+                     breaks = c("Agricultural Workers", "PM 2.5"),
+                     labels = c("Agricultural Workers", "PM 2.5") ) +
+
+  scale_shape_manual(values = c("circle", "triangle"),
+                     name ="Monthly Averages",
+                     breaks = c("Agricultural Workers", "PM 2.5"),
+                     labels = c("Agricultural Workers", "PM 2.5") ) +
+
+  # labels
+  labs(#title = , 
+       x = " ", 
+       y = expression(paste("PM"[2.5]," (",mu,"g/m"^{3},")"))
+       ) +
+  
+  scale_y_continuous(limits = c(ylim_prim[1], ylim_prim[2]), expand = c(0, 0),
+                     breaks = seq(ylim_prim[1], ylim_prim[2], by = 50),
+                     sec.axis = sec_axis(trans = ~ (. - a)/b,
+                                         breaks = seq(0, ylim_sec[2], by = ax_by),
+                                         name = "Change in Workers (%)")
+                     ) + 
+  scale_x_discrete(labels = every_nth_label(esd_month$Month)) + 
+
+  # theme
+  guides(x = guide_axis(angle = 90) ) +
+  theme_bw(base_size = 11) +
+  theme(legend.position = "none", 
+        axis.title.x = element_blank(),
+        axis.line.y.right = element_line(color = "blue"),
+        axis.ticks.y.right = element_line(color = "blue"),
+        axis.text.y.right = element_text(color = "blue"),
+        axis.title.y.right = element_text(color = "blue")
+        )
+
+# show and save figure
+figs[["AQS_ESD_bymonth"]]
+save_fig("AQS_ESD_bymonth")
+
+```
+
+Below is a barplot, where the change in workers is calculated as above, and the
+average time over the 10 years above one of the thresholds (currently 55.5
+ug/m3) is tallied and converted to a percent of the month (i.e., hours per
+month). In other words, the left-hand y-axis should be interpreted as: "in
+Chelan County from 2011-2020, on average, ~8% of the time in September, the
+PM2.5 concentration was above 55.5 ug/m3."
+
+```{r hours.month.above.single.threshold}
+#---- hours month above single threshold ----#
+
+# NOTE: can use either `percent_above_20.5` or `percent_above_55.5`
+
+# temporary dataframe
+temp <- above_thresholds_monthly %>% 
+  group_by(Month, county) %>% 
+  summarise(percent_above_20.5 = mean(percent_above_20.5, na.rm = TRUE), 
+            percent_above_55.5 = mean(percent_above_55.5, na.rm = TRUE), 
+            .groups = "drop") %>% 
+  drop_na(Month)
+
+
+# specify axis limits
+ylim_prim <- c(0, 20)   
+ylim_sec <- y_axis_lim 
+
+# calculate scaling factors
+b <- diff(ylim_prim)/diff(ylim_sec)
+a <- b*(ylim_prim[1] - ylim_sec[1])
+
+# initialize plot
+figs[["exceed_threshold_ESD_bymonth_percent"]] <- ggplot() +
+  
+  # AQI bars
+  geom_col(data = temp, aes(x = Month, y = percent_above_55.5))+
+  
+  
+  # lines of monthly employment
+  geom_line(data = esd_month, 
+            aes(x = Month, y = (a + Workers_percent*b), group = "1") 
+  ) +
+  
+  facet_wrap(~county) +
+  
+  # labels
+  labs(#title = , 
+       x = " ", 
+       y = "Time above threshold (%)", 
+       ) +
+  
+  # axes
+  scale_x_discrete(labels = every_nth_label(temp$Month)) +
+  
+  scale_y_continuous(limits = c(ylim_prim[1], ylim_prim[2]), expand = c(0,0),
+                     breaks = seq(ylim_prim[1], ylim_prim[2], by = 2),
+                     sec.axis = sec_axis(trans = ~ (. - a)/b,
+                                         breaks = seq(ylim_sec[1], ylim_sec[2], by = ax_by),
+                                         name = "Change in Workers (%)")) +
+  
+  # theme
+  guides(x = guide_axis(angle = 90) ) +
+  theme_bw() + 
+  theme(axis.title.x = element_blank(), 
+        legend.position = "bottom") +
+  scale_fill_brewer(palette = "Oranges") # "Greys" OR "OrRd"
+
+# show & save plot
+figs[["exceed_threshold_ESD_bymonth_percent"]]
+save_fig("exceed_threshold_ESD_bymonth_percent")
+
+```
+
+The plot below maintains the prior interpretations, but shows both thresholds.
+The time above 55.5 ug/m3 was "removed" from the time above 20.5 ug/m3 so as not
+to double-count.
+
+```{r hours.month.above.both.thresholds}
+#---- hours month above both thresholds ----#
+
+# temporary dataframe
+temp <- above_thresholds_monthly %>% 
+  group_by(Month, county) %>% 
+  summarise(percent_above_20.5 = mean(percent_above_20.5, na.rm = TRUE), 
+            percent_above_55.5 = mean(percent_above_55.5, na.rm = TRUE), 
+            .groups = "drop") %>% 
+  drop_na(Month) %>% 
+  mutate(percent_above_20.5 = percent_above_20.5-percent_above_55.5) %>% 
+  pivot_longer(cols = contains("percent_above"), 
+               names_to = "threshold", values_to = "percent_above") %>% 
+  mutate(threshold = str_remove(threshold, "percent_above_"))
+
+
+# specify axis limits
+ylim_prim <- c(0, 20)   
+ylim_sec <- y_axis_lim 
+
+# calculate scaling factors
+b <- diff(ylim_prim)/diff(ylim_sec)
+a <- b*(ylim_prim[1] - ylim_sec[1])
+
+# initialize plot
+figs[["exceed_thresholds_ESD_bymonth_percent"]] <- ggplot() +
+  
+  # AQI bars
+  geom_col(data = temp, aes(x = Month, y = percent_above, fill = threshold))+
+  
+  
+  # lines of monthly employment
+  geom_line(data = esd_month, 
+            aes(x = Month, y = (a + Workers_percent*b), group = "1") 
+  ) +
+  
+  facet_wrap(~county) +
+  
+  # labels
+  labs(#title = , 
+    x = " ", 
+    y = "Time above threshold (%)", 
+    fill = expression(paste("PM"[2.5], " threshold"," (",mu,"g/m"^{3},")"))) +
+  
+  # axes
+  scale_x_discrete(labels = every_nth_label(temp$Month)) +
+  
+  scale_y_continuous(limits = c(ylim_prim[1], ylim_prim[2]), expand = c(0,0),
+                     breaks = seq(ylim_prim[1], ylim_prim[2], by = 2),
+                     sec.axis = sec_axis(trans = ~ (. - a)/b,
+                                         breaks = seq(ylim_sec[1], ylim_sec[2], by = ax_by),
+                                         name = "Change in Workers (%)")) +
+  
+  # theme
+  guides(x = guide_axis(angle = 90) ) +
+  theme_bw() + 
+  theme(axis.title.x = element_blank(), 
+        legend.position = "bottom") +
+  scale_fill_brewer(palette = "Oranges") # "Greys" OR "OrRd"
+
+# show & save plot
+figs[["exceed_thresholds_ESD_bymonth_percent"]]
+save_fig("exceed_thresholds_ESD_bymonth_percent")
+
+```
+
+
+## Worker exposure
+
+This figure might need some work/re-thinking. Currently, I've just multiplied
+the fraction of each day (in hours) that are above each threshold for each
+county, then multiplied that by the number of workers for each county (and
+combined counties for plotting). So this is kind of like worker-equivalents
+above each threshold, i.e., number of workers * fraction of day above threshold,
+and not an estimate like worker-hours. For that sort of estimate, I think we'd
+need to assume some standard number of hours worked, like: 8 hr * number of
+workers * fraction of day above threshold = worker-hours above threshold.
+
+The plot shows a daily timeseries (where most values are zero; I've just put
+points at non-zero values). It might be more informative at this point to
+integrate under each curve?
+
+```{r worker.days.thresholds, warning=FALSE}
+#---- worker.days.thresholds ----#
+
+# make dataframe with ESD and AQS data
+esd_pm <- esd_sub %>% 
+  select(Year, Month, Date, county, Industry, Workers) %>% 
+  left_join(
+    
+    # number (fraction) of hours per day that exceed thresholds for each county
+    aqs_hourly %>% 
+      mutate(exceed_20.5 = if_else(PM2.5 > 20.5, 1, 0), # WA recommended
+             exceed_55.5 = if_else(PM2.5 > 55.5, 1, 0) # WA required
+             ) %>% 
+      group_by(Year, Month, month, date_local, county) %>% 
+      summarise(fraction_above_20.5 = sum(exceed_20.5, na.rm = TRUE)/24, 
+                fraction_above_55.5 = sum(exceed_55.5, na.rm = TRUE)/24,
+                .groups = "drop") %>% 
+      mutate(Date = ymd(paste(Year, month, "01", sep = "-"))),
+    
+    by = c("Year", "Month", "Date", "county")
+  ) %>% 
+  mutate(workers_20.5 = Workers*fraction_above_20.5, 
+         workers_55.5 = Workers*fraction_above_55.5) %>% 
+  pivot_longer(contains("workers_"), 
+               names_to = "threshold", values_to = "workers") %>% 
+  separate(threshold, sep = "_", into = c(NA, "threshold"), extra = "drop") %>% 
+  mutate(datetime = ymd_hms(paste(date_local, "00:00:00"), tz = "US/Pacific") )
+
+
+# make plot
+figs[["worker_equivalent_above_threshold"]] <- ggplot() + 
+  geom_line(data = esd_pm, aes(x = datetime, y = workers, color = threshold)) + 
+  geom_point(data = esd_pm %>% 
+               mutate(workers = ifelse(workers == 0, NA, 
+                                       workers)), 
+             aes(x = datetime, y = workers, 
+                 color = threshold), shape = "o", size = 3 ) +
+  
+  facet_wrap(~threshold, ncol = 1) +
+  labs(y = "Thousand workers", 
+       color = expression(paste("PM"[2.5], " Threshold"," (",mu,"g/m"^{3},")")) 
+       ) + 
+  scale_x_datetime(breaks = date_breaks("3 months"), 
+                   minor_breaks = date_breaks("1 month"),
+                   labels = date_format("%Y-%b") ) + 
+  guides(x = guide_axis(angle = 90) ) +
+  theme_bw() + 
+  scale_color_brewer(palette = "Dark2") +
+  theme(axis.title.x = element_blank(), 
+        legend.position = "bottom" )
+
+# show & save figure
+figs[["worker_equivalent_above_threshold"]]
+save_fig("worker_equivalent_above_threshold", size = c(width = 7.5, height = 7.5) )
+
+```
+
+
+## Correlation
+
+This is the correlation between monthly average workers and monthly average
+PM2.5 concentration.
+
+```{r prep.corr_df}
+#---- prep correlation dataframe ----#
+
+corr_df <- list(
+
+  esd_month %>%
+    select(Month, county, Workers_percent), 
+    
+  aqs_hourly %>% 
+    group_by(Month, county) %>% 
+    summarise(PM2.5 = mean(PM2.5), .groups = "drop")
+  
+  ) %>% 
+  reduce(full_join) %>% 
+  drop_na()
+
+```
+
+
+```{r correlate.pm25.workers}
+#---- correlate pm25 workers ----#
+
+corr_list <- corr_df %>% 
+  select(-Month) %>%
+  split(f = .$county) %>% 
+  purrr::map(function(i) {cor(i %>% select(where(is.numeric)))})
+
+# make a table with % workers and air quality by month variables
+tbls[["corr_list"]] <- corr_list %>% 
+  lapply(function(i){ i %>% as.data.frame %>% rownames_to_column() }) %>% 
+  bind_rows(.id = "County") %>% 
+  filter(rowname == "Workers_percent") %>% 
+  select(County, avg_PM2.5_month = PM2.5) %>% 
+  mutate_if(is.numeric, round, 3)
+
+tbls[["corr_list"]]
+
+```
+
+
+# Save figures & tables
+
+Save figures as `.png` files in `ouput` directory.
+
+```{r save.figures.to.output.directory, eval=FALSE, include=FALSE}
+#---- save figures to output directory ----#
+
+# save figures as ".png", ".jpg", or ".pdf" (and more) using lapply and ggsave
+# units can be specified as "in", "cm"
+lapply(names(figs), function(x){
+  ggsave(filename = file.path(output_dir, paste0(x,".png")), 
+         plot = figs[[x]], width = 7.5, height = 4, units = "in", dpi = "print")
+  })
+
+```
+
+
+```{r save.tables.to.output.directory}
+#---- save tables to output directory ----#
+
+lapply(names(tbls),function(x){
+  write_csv(tbls[[x]], file = file.path(output_dir, paste0(x,".csv"))) 
+  })
+
+```
+
+
+# Code appendix
+
+## Session information
+
+```{r session.information}
+#---- session information ----#
+
+sessionInfo()
+
+```
+
+## Code
+
+```{r code.appendix, ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE, tidy=TRUE, tidy.opts=list(width.cutoff=60), include=T}
+#---- code appendix ----#
+
+```
+
+## Custom functions
+
+```{r custom.functions, eval = TRUE}
+#---- custom functions ----#
+
+# names of custom functions
+lsf.str()
+
+# definitions of custom functions   
+lsf.str() %>% set_names() %>% purrr::map(get, .GlobalEnv)
+
+```
+
+# --- End --- 
