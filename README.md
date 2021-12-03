@@ -15,6 +15,7 @@
 |    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries         | [Fatalities summary table with descriptions](https://www.lni.wa.gov/safety-health/preventing-injuries-illnesses/workplace-injuries-fatalities/#fatality-summaries)| 2020-2021 | state, per industry| num | pdf |
 |    WA         |    Ag (H-2A)      | USDOL            | [ESD-WA](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | County | den | pdf | Worker population and wages per county |
 |    WA         |    Ag (H-2A)        |   DOL-OFLS       | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | xls | County and industry must be manually extracted ; Additional usedful data|
+|    WA         |    Fo, Fi (H-2B)        |   DOL-OFLS       | [Performance data-H-2B Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | xls | County and industry must be manually extracted ; Additional usedful data|
 
 
 
@@ -29,6 +30,7 @@
 |    OR         | Ag,Fo,Fi         |   OR OSHA       | [Compensable fatalities per NAICS industry/occupation code](https://www.oregon.gov/dcbs/reports/protection/Pages/compensable-fatalities.aspx) | 2000-2021 | state, year  | num | pdf |
 |    OR         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 |    OR         | Ag,Fo,Fi         |   OR Health Authority       | [Migrant and Seasonal Farmworker Enumeration Studies](https://www.oregon.gov/oha/HPA/HP-PCO/Pages/Migrant-Health.aspx) | 2002, 2013, 2018 | state, year  | num, den| pdf report |
+|    OR         |    Fo, Fi (H-2B)        |   DOL-OFLS       | [Performance data-H-2B Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | xls | County and industry must be manually extracted ; Additional usedful dat
 
 non-farm estimates for oregon (den)
 https://www.qualityinfo.org/ed-ceest/?at=1&t1=41010000000~0~0~00000000~2014~or
@@ -42,7 +44,7 @@ https://www.qualityinfo.org/ed-ceest/?at=1&t1=41010000000~0~0~00000000~2014~or
 |    ID         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=ID#x=0&g=0)      |  1990-2020          | County - quarter or year      | den | tables |
 |    ID        | Ag,Fo,Fi          | DOL BLS           | [Fatal Occupational Injuries](https://www.bls.gov/iif/state_archive.htm#ID) | 1992-2019 | Yearly summary per industry| num, den| pdf exl |
 |    ID         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
-
+|    ID        |    Fo, Fi (H-2B)        |   DOL-OFLS       | [Performance data-H-2B Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | xls | County and industry must be manually extracted ; Additional usedful dat
 
 
 ### AK
@@ -56,7 +58,7 @@ https://www.qualityinfo.org/ed-ceest/?at=1&t1=41010000000~0~0~00000000~2014~or
 |    AK         | Ag,Fo,Fi          | DOL BLS           | [Fatal Occupational Injuries](https://www.bls.gov/iif/state_archive.htm#ID) | 1992-2019 | Yearly summary per industry| num, den| pdf exl |
 |    AK         | Fi               | NIOSH          | [AK commercial fishing fatalities](https://www.cdc.gov/niosh/docs/2017-171/default.html) | 200-2009, 2010-2014 | Fatality by cause, fleet by year and incident type; Overview regional map of fatality locations | num, den, rates| pdf | Yearly trends by incident type 2000-2014; regional comparisons of rates 2005-2014 |
 |    AK         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
-
+|    AK         |    Fo, Fi (H-2B)        |   DOL-OFLS       | [Performance data-H-2B Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | xls | County and industry must be manually extracted ; Additional usedful dat
 
 
 ### State comparisons
