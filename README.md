@@ -11,13 +11,14 @@
 |    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries Bureau of Labor Statistics Information   | [BLSI](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/labor-statistics-blsi)| 2007-2019 per year | by industry within WA state per NAICS code | num, den| pdf | Not comparable with L & I claims data |
 |    WA         | Ag,Fo,Fi          | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 2013-2019| state per NAICS code| num, den | xls | Lacking county level resolution |
 |    WA         |    Ag,Fo,Fi       | US census bureau |  [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   1990-2020         |  County - quarter or year  | den | pdf |
+|    WA         |    Ag,Fo,Fi       | DOL BLS |  [QCEW - NAICS 3,4,5,6-digit codes](https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)      |   2017-2021         |  Sate, County - quarter or year | den | pdf |
 |    WA         | Ag,Fo,Fi          |  WA Department of Labor and Industries        | [Fatalities](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/labor-statistics-blsi)| 2013-2019 | state, year (4-year increments) | num | pdf |
 |    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries         | [Fatalities summary table with descriptions](https://www.lni.wa.gov/safety-health/preventing-injuries-illnesses/workplace-injuries-fatalities/#fatality-summaries)| 2020-2021 | state, per industry| num | pdf |
 |    WA         |    Ag (H-2A)      | USDOL            | [ESD-WA](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | County | den | pdf | Worker population and wages per county |
 |    WA         |    Ag (H-2A)        |   DOL-OFLS       | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | xls | County and industry must be manually extracted ; Additional usedful data|
 |    WA         |    Fo, Fi (H-2B)        |   DOL-OFLS       | [Performance data-H-2B Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | xls | County and industry must be manually extracted ; Additional usedful data|
 
-
+https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables
 
 ### OR
 
@@ -26,6 +27,7 @@
 |    OR         | Ag,Fo,Fi         |   OR BLS        | [Non-fatal Occupational Injuries](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | Yearly summary | num | pdf |
 |    OR         | Ag,Fo,Fi         | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 1994-2015 | state level | num, den | pdf |
 |    OR         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=OR#x=0&g=0)      |  1990-2020          | County - quarter or year      | den | tables |
+|    OR         |    Ag,Fo,Fi       | DOL BLS |  [QCEW - NAICS 3,4,5,6-digit codes](https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)      |   2017-2021         |  Sate, County - quarter or year | den | pdf |
 |    OR         | Ag,Fo,Fi         |   OR BLS        | [Census of Fatal Occupational Injuries](https://www.oregon.gov/dcbs/reports/protection/Pages/boli-statistics.aspx) | 2003-2019 | Yearly summary | num | pdf |
 |    OR         | Ag,Fo,Fi         |   OR OSHA       | [Compensable fatalities per NAICS industry/occupation code](https://www.oregon.gov/dcbs/reports/protection/Pages/compensable-fatalities.aspx) | 2000-2021 | state, year  | num | pdf |
 |    OR         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
@@ -42,6 +44,7 @@ https://www.qualityinfo.org/ed-ceest/?at=1&t1=41010000000~0~0~00000000~2014~or
 |---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------|
 |    ID         | Ag,Fo,Fi         | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 1994-2015 | state level | num, den | pdf |
 |    ID         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=ID#x=0&g=0)      |  1990-2020          | County - quarter or year      | den | tables |
+|    ID         |    Ag,Fo,Fi       | DOL BLS |  [QCEW - NAICS 3,4,5,6-digit codes](https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)      |   2017-2021         |  Sate, County - quarter or year | den | pdf |
 |    ID        | Ag,Fo,Fi          | DOL BLS           | [Fatal Occupational Injuries](https://www.bls.gov/iif/state_archive.htm#ID) | 1992-2019 | Yearly summary per industry| num, den| pdf exl |
 |    ID         | Ag H-2A          |   DOL-OFLS        | [Performance data-H-2A Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | Tables or PDF |
 |    ID        |    Fo, Fi (H-2B)        |   DOL-OFLS       | [Performance data-H-2B Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | xls | County and industry must be manually extracted ; Additional usedful dat
@@ -54,6 +57,7 @@ https://www.qualityinfo.org/ed-ceest/?at=1&t1=41010000000~0~0~00000000~2014~or
 |    AK         | Ag,Fo,Fi         | AK DOL and workforce development     | [Non-fatal injuries](https://live.laborstats.alaska.gov/injill/index.cfm)| 1997-2019 | state level | num | pdf |
 |    AK         | Ag,Fo,Fi         | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 1994-2015 | state level | num | pdf |
 |    AK         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=AK#x=0&g=0)      |  2000-2016          | County - quarter or year      | den | tables |
+|    AK         |    Ag,Fo,Fi       | DOL BLS |  [QCEW - NAICS 3,4,5,6-digit codes](https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)      |   2017-2021         |  Sate, County - quarter or year | den | pdf |
 |    AK         | Ag,Fo,Fi          | AK DOL and workforce development  | [Fatal Occupational Injuries](https://live.laborstats.alaska.gov/fatal/index.htmlD) | 1992-2018 | Yearly summary per industry| num, den| pdf exl |
 |    AK         | Ag,Fo,Fi          | DOL BLS           | [Fatal Occupational Injuries](https://www.bls.gov/iif/state_archive.htm#ID) | 1992-2019 | Yearly summary per industry| num, den| pdf exl |
 |    AK         | Fi               | NIOSH          | [AK commercial fishing fatalities](https://www.cdc.gov/niosh/docs/2017-171/default.html) | 200-2009, 2010-2014 | Fatality by cause, fleet by year and incident type; Overview regional map of fatality locations | num, den, rates| pdf | Yearly trends by incident type 2000-2014; regional comparisons of rates 2005-2014 |
@@ -67,6 +71,7 @@ https://www.qualityinfo.org/ed-ceest/?at=1&t1=41010000000~0~0~00000000~2014~or
 |---------------|-------------------|------------------|--------|------------|-------------|----------------------|------------| --------------------- |
 |    US         | Ag,Fo,Fi         | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 1994-2015 | state level | num | pdf |
 |    US         |    Ag,Fo,Fi       | US census bureau | [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=US#x=0&g=0)      |  1990-2020          | County - quarter or year      | den | tables |
+|    US         |    Ag,Fo,Fi       | DOL BLS |  [QCEW - NAICS 3,4,5,6-digit codes](https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)      |   2017-2021         |  Sate, County - quarter or year | den | pdf |
 |    US         | Ag,Fo,Fi          | DOL BLS           | [Fatal Occupational Injuries](https://www.bls.gov/iif/state_archive.htm#ID) | 1992-2019 | Yearly summary per industry| num, den| pdf exl |
 |   US      |    Ag,Fo,Fi           | OSHA |  [Fatality Inspection Data](https://www.osha.gov/fatalities)      |       1969-2021   |  state    | num | free text, Tables or PDF |
 |   US      |    Ag,Fo,Fi           | OSHA |  [Injury tracking Application](https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data)      |           |  2016-2020    | state, employer and worker specific  data | Tables or PDF |
