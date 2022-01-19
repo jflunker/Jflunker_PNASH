@@ -1,6 +1,5 @@
-# AFF Health Indicators
+# Agriculture, Fishing, Forestry Health Indicators among Pacific Northwest operations
 
-### New tables to be added to master GitHub repository
 
 ### State tables and US table
 
