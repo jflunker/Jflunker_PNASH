@@ -10,7 +10,8 @@
 |    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries Bureau of Labor Statistics Information   | [BLSI](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/labor-statistics-blsi)| 2007-2020 per year | by industry within WA state per NAICS code | num, den| pdf | Not comparable with L & I claims data |
 |    WA         | Ag,Fo,Fi          | DOL BLS         | [Non-fatal injuries](https://www.bls.gov/iif/oshstate.htm) | 2013-2019| state per NAICS code| num, den | xls | Lacking county level resolution |
 |    WA         |    Ag,Fo,Fi       | US census bureau |  [QWI Explorer NAICS 3 and 4-digit codes](https://qwiexplorer.ces.census.gov/static/explore.html?s=107a49&v=line&t=ac0&fc=true&st=WA#x=0&g=0)      |   1990-2020         |  County - month, quarter or year  | den | pdf |
-|    WA         |    Ag,Fo,Fi       | DOL BLS |  [QCEW - NAICS 3,4,5,6-digit codes](https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)      |   2017-2021         |  Sate, County - quarter or year | den | pdf |
+|    WA         |    Ag,Fo,Fi       | DOL BLS |  [QCEW - NAICS 3,4,5,6-digit codes](https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables)      |   2017-2021         |  Sate, County - quarter or year or month (6 digit NAICS per month and county) | den | pdf |
+|    WA         |    Ag,Fo,Fi       | WA ESD |  [QCEW - NAICS 2,3,6-digit code](https://www.esd.wa.gov/labormarketinfo/report-library)      |   2002-2020         |  Sate (6 digit NAICS state-wide per year), County (2,3 digit NAICS per month) - quarter, year, month | den | pdf |
 |    WA         | Ag,Fo,Fi          |  WA Department of Labor and Industries        | [Fatalities](https://lni.wa.gov/claims/for-employers/workers-compensation-injury-data/labor-statistics-blsi)| 2013-2019 | state, year (4-year increments) | num | pdf |
 |    WA         | Ag,Fo,Fi          | WA Department of Labor and Industries         | [Fatalities summary table with descriptions](https://www.lni.wa.gov/safety-health/preventing-injuries-illnesses/workplace-injuries-fatalities/#fatality-summaries)| 2020-2021 | state, per industry| num | pdf |
 |    WA         |    Ag (H-2A)      | USDOL            | [ESD-WA](https://esd.wa.gov/labormarketinfo/ag-employment-and-wages) | 2009-2019 | County | den | pdf | Worker population and wages per county |
@@ -18,6 +19,8 @@
 |    WA         |    Fo, Fi (H-2B)        |   DOL-OFLS       | [Performance data-H-2B Program](https://www.dol.gov/agencies/eta/foreign-labor/performance)| 2008-2020 |  County - quarter or year; date of application/job start end date | den | xls | County and industry must be manually extracted ; Additional usedful data|
 
 https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables
+
+
 
 ### OR
 
